@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MasonMole
+  - RollingPin
+  - Key
+  - TastyTreat
+  - Cleaver
+  - JamJar
+  - Footprints
+  - DiamondNecklace
+  - Boat
+  - Chest
   layers:
   - Default
   - TransparentFX
