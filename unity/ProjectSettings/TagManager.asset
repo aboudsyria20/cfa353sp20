@@ -14,6 +14,10 @@ TagManager:
   - DiamondNecklace
   - Boat
   - Chest
+  - ShopRacoon
+  - BarberBear
+  - BakerHippo
+  - ButcherBunny
   layers:
   - Default
   - TransparentFX

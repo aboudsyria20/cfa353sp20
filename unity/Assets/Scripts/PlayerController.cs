@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void Inventory()
+    public void Inventory()
     {
       if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false)
       {

@@ -1464,9 +1464,10 @@ GameObject:
   - component: {fileID: 471498021}
   - component: {fileID: 471498020}
   - component: {fileID: 471498019}
+  - component: {fileID: 471498024}
   m_Layer: 0
   m_Name: BarberBear
-  m_TagString: Untagged
+  m_TagString: BarberBear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1562,6 +1563,19 @@ Transform:
   m_Father: {fileID: 786757412}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &471498024
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471498018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,9 +1672,10 @@ GameObject:
   - component: {fileID: 529154166}
   - component: {fileID: 529154165}
   - component: {fileID: 529154164}
+  - component: {fileID: 529154169}
   m_Layer: 0
   m_Name: BakerHippo
-  m_TagString: Untagged
+  m_TagString: BakerHippo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1756,6 +1771,19 @@ Transform:
   m_Father: {fileID: 786757412}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &529154169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529154163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &605378813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,9 +2514,10 @@ GameObject:
   - component: {fileID: 781002729}
   - component: {fileID: 781002728}
   - component: {fileID: 781002727}
+  - component: {fileID: 781002732}
   m_Layer: 0
   m_Name: ButcherBunny
-  m_TagString: Untagged
+  m_TagString: ButcherBunny
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2584,6 +2613,19 @@ Transform:
   m_Father: {fileID: 786757412}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &781002732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781002726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &782157673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3825,9 +3867,10 @@ GameObject:
   - component: {fileID: 1111565318}
   - component: {fileID: 1111565317}
   - component: {fileID: 1111565316}
+  - component: {fileID: 1111565321}
   m_Layer: 0
   m_Name: ShopRacoon
-  m_TagString: Untagged
+  m_TagString: ShopRacoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3923,6 +3966,19 @@ Transform:
   m_Father: {fileID: 786757412}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1111565321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111565315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 7, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1113005506
 GameObject:
   m_ObjectHideFlags: 0
