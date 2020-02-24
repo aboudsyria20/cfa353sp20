@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-  DialogOptions do;
-
   [Header("Player Stats")]
   public Rigidbody rb;
   private Vector3 playerPosition;
   public float playerSpeed = 20;
+
+  [Header("Get Other Scripts")]
+  DialogueOptions dop;
 
   [Header("Evidence")]
   public GameObject key;
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        do = FindObjectOfType<DialogOptions>();
+        dop = FindObjectOfType<DialogueOptions>();
     }
 
     // Update is called once per frame
@@ -58,6 +59,11 @@ public class PlayerController : MonoBehaviour
     speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
     rb.MovePosition(rb.transform.position + speedVect);
 
+    //if(Input.GetKeyUp(KeyCode.W))
+    //{
+//
+    //}
+
 
         //if(Input.GetKeyDown(KeyCode.W))
         //{
@@ -67,19 +73,17 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+      if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.E))
+      {
+            Destroy(other.gameObject);
+            deliTicketInInventory = true;
+            dop.MustHavePickedUpTicket = true;
+
+      }
+
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.E))
         {
             keyInInventory = true;
         }
-
-        if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.E))
-        {
-              deliTicketInInventory = true;
-              do.MustHavePickedUpTicket = true;
-              Destroy(other.gameObject);
-        }
-
-
-
     }
 }
