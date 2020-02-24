@@ -4,13 +4,48 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+  DialogOptions do;
+
+  [Header("Player Stats")]
   public Rigidbody rb;
-  public Vector3 playerPosition;
+  private Vector3 playerPosition;
   public float playerSpeed = 20;
+
+  [Header("Evidence")]
+  public GameObject key;
+  public GameObject rollingPin;
+  public GameObject diamondNecklace;
+  public GameObject jarOfJam;
+  public GameObject footprints;
+  public GameObject frozenFish;
+  public GameObject butchersKnife;
+  public GameObject deliTicket;
+  public GameObject jellyDonut;
+
+  [Header("Evidence in Inventory")]
+  private bool keyInInventory = false;
+  private bool rollingPinInventory = false;
+  private bool diamondNecklaceInventory = false;
+  private bool jarOfJamInventory = false;
+  private bool footprintsInInventory = false;
+  private bool frozenFishInInventory = false;
+  private bool butchersKnifeInInventory = false;
+  private bool deliTicketInInventory = false;
+  private bool jellyDonutInInventory = false;
+
+  [Header("Can Get Specific Evidence")]
+  private bool canGetJellyDonut = false;
+  private bool canGetPawnInformation = false;
+  private bool canGetBarberInformation = false;
+  private bool canOpenBoat = false;
+  private bool canDigKey = false;
+  private bool canOpenChest = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        do = FindObjectOfType<DialogOptions>();
     }
 
     // Update is called once per frame
@@ -28,5 +63,23 @@ public class PlayerController : MonoBehaviour
         //{
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
         //}
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.E))
+        {
+            keyInInventory = true;
+        }
+
+        if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.E))
+        {
+              deliTicketInInventory = true;
+              do.MustHavePickedUpTicket = true;
+              Destroy(other.gameObject);
+        }
+
+
+
     }
 }
