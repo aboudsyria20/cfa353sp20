@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 120843364}
   - component: {fileID: 120843363}
   - component: {fileID: 120843362}
+  - component: {fileID: 120843367}
   m_Layer: 0
   m_Name: CreekBoat
   m_TagString: Boat
@@ -353,6 +354,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!65 &120843367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120843361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &134447181
 GameObject:
   m_ObjectHideFlags: 0
