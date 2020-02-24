@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -43,6 +45,13 @@ public class PlayerController : MonoBehaviour
   private bool canDigKey = false;
   private bool canOpenChest = false;
 
+  [Header("Inventory")]
+  public GameObject inventoryPanel;
+  public Text deliTicketText;
+  public Text jarOfJamText;
+  public Text RollingPinText;
+  private bool inventoryIsOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +79,40 @@ public class PlayerController : MonoBehaviour
         //{
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
         //}
+
+        Inventory();
+
+    }
+
+    void Inventory()
+    {
+      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false)
+      {
+        inventoryPanel.gameObject.SetActive(true);
+          if(deliTicketInInventory == true)
+          {
+              deliTicketText.gameObject.SetActive(true);
+          }
+          if(jarOfJamInventory == true)
+          {
+              jarOfJamText.gameObject.SetActive(true);
+          }
+          if(rollingPinInventory == true)
+          {
+              RollingPinText.gameObject.SetActive(true);
+          }
+          inventoryIsOpen = true;
+      }
+
+      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == true)
+      {
+        inventoryPanel.gameObject.SetActive(false);
+        deliTicketText.gameObject.SetActive(false);
+        jarOfJamText.gameObject.SetActive(false);
+        RollingPinText.gameObject.SetActive(false);
+        inventoryIsOpen = false;
+      }
+
     }
 
     void OnTriggerStay(Collider other)
