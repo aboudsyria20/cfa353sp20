@@ -6,7 +6,7 @@ public class SceneCharacters : MonoBehaviour
 {
     [SerializeField] private DialoguePanel m_dialoguePanel;
     [SerializeField] private Characters m_character;
-    [SerializeField] private DialogueOption m_initialOption;
+    [SerializeField] private DialogueOptions m_initialOption;
 
     public void OnMouseDown()
     {

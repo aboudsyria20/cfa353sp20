@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker(2-Good
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: I have a jam addiction and I didn't want him to know.
-  m_responses:
-  - Response: Do you have information on the murder then?
-    Option: {fileID: 11400000, guid: a444e3c92a626634a8e3dafb205c47f3, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  m_dialogue: 
+  m_responses: []

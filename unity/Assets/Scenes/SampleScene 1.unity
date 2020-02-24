@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: abb63c90019a8aa449623cc688f40ee5, type: 2}
-  m_initialOption: {fileID: 11400000, guid: 0a3061edb3e1a4549b9b84e0bf423e07, type: 2}
+  m_initialOption: {fileID: 0}
 --- !u!1 &916886483
 GameObject:
   m_ObjectHideFlags: 0

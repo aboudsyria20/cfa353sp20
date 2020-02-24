@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
   public float playerSpeed = 20;
 
   [Header("Get Other Scripts")]
-  DialogueOptions dop;
+  //DialogueOptions dop;
 
   [Header("Evidence")]
   public GameObject key;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dop = FindObjectOfType<DialogueOptions>();
+       // dop = FindObjectOfType<DialogueOptions>();
     }
 
     // Update is called once per frame
@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
       {
             Destroy(other.gameObject);
             deliTicketInInventory = true;
-            dop.MustHavePickedUpTicket = true;
+          //  dop.MustHavePickedUpTicket = true;
 
       }
 
