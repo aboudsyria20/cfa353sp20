@@ -2,19 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DialogueOption", menuName = "DialogeOption")]
-public class DialogueOptions : MonoBehaviour
+[CreateAssetMenu(fileName = "DialogueOption", menuName = "ScriptableObjects/DialogueOption")]
+public class DialogueOption : ScriptableObject
 {
-    public string m_Dialogue;
+    [SerializeField] private string m_dialogue;
+    public string dialogue { get { return m_dialogue; } set { m_dialogue = value; } }
 
-    public DialogueResponse[] m_responses;
-
+    [SerializeField] private DialogueResponse[] m_responses;
+    public DialogueResponse[] responses { get { return m_responses; } set { m_responses = value; } }
 }
+
 [System.Serializable]
 public class DialogueResponse
 {
     public string Response;
-    public DialogueOptions Option;
-    //Storing data
-                // public Evidence[] RequiredEvidence;
+    public DialogueOption Option;
+    public bool MustHavePickedUpJam;
+    public bool MustHavePickedUpKey;
 }
