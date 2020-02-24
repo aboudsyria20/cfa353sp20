@@ -4,13 +4,49 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+  [Header("Player Stats")]
   public Rigidbody rb;
-  public Vector3 playerPosition;
+  private Vector3 playerPosition;
   public float playerSpeed = 20;
+
+  [Header("Get Other Scripts")]
+  DialogueOptions dop;
+
+  [Header("Evidence")]
+  public GameObject key;
+  public GameObject rollingPin;
+  public GameObject diamondNecklace;
+  public GameObject jarOfJam;
+  public GameObject footprints;
+  public GameObject frozenFish;
+  public GameObject butchersKnife;
+  public GameObject deliTicket;
+  public GameObject jellyDonut;
+
+  [Header("Evidence in Inventory")]
+  private bool keyInInventory = false;
+  private bool rollingPinInventory = false;
+  private bool diamondNecklaceInventory = false;
+  private bool jarOfJamInventory = false;
+  private bool footprintsInInventory = false;
+  private bool frozenFishInInventory = false;
+  private bool butchersKnifeInInventory = false;
+  private bool deliTicketInInventory = false;
+  private bool jellyDonutInInventory = false;
+
+  [Header("Can Get Specific Evidence")]
+  private bool canGetJellyDonut = false;
+  private bool canGetPawnInformation = false;
+  private bool canGetBarberInformation = false;
+  private bool canOpenBoat = false;
+  private bool canDigKey = false;
+  private bool canOpenChest = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        dop = FindObjectOfType<DialogueOptions>();
     }
 
     // Update is called once per frame
@@ -23,10 +59,31 @@ public class PlayerController : MonoBehaviour
     speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
     rb.MovePosition(rb.transform.position + speedVect);
 
+    //if(Input.GetKeyUp(KeyCode.W))
+    //{
+//
+    //}
+
 
         //if(Input.GetKeyDown(KeyCode.W))
         //{
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
         //}
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+      if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.E))
+      {
+            Destroy(other.gameObject);
+            deliTicketInInventory = true;
+            dop.MustHavePickedUpTicket = true;
+
+      }
+
+        if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.E))
+        {
+            keyInInventory = true;
+        }
     }
 }
