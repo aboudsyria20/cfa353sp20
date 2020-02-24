@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
-        dop = FindObjectOfType<DialogueOptions>();
+        //dop = FindObjectOfType<DialogueOptions>();
 
     }
 
@@ -78,10 +78,8 @@ public class PlayerController : MonoBehaviour
       {
             Destroy(other.gameObject);
             deliTicketInInventory = true;
-
-
             Debug.Log("Picked up Ticket");
-            dop.MustHavePickedUpTicket = true;
+            //dop.MustHavePickedUpTicket = true;
       }
 
 
