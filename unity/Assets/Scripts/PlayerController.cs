@@ -46,7 +46,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // dop = FindObjectOfType<DialogueOptions>();
+
+        dop = FindObjectOfType<DialogueOptions>();
+
     }
 
     // Update is called once per frame
@@ -64,7 +66,6 @@ public class PlayerController : MonoBehaviour
 //
     //}
 
-
         //if(Input.GetKeyDown(KeyCode.W))
         //{
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
@@ -73,17 +74,27 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-      if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.E))
+      if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
             deliTicketInInventory = true;
-          //  dop.MustHavePickedUpTicket = true;
 
+
+            Debug.Log("Picked up Ticket");
+            dop.MustHavePickedUpTicket = true;
       }
 
-        if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.E))
+
+      if (other.tag == "JamJar" && Input.GetKeyDown(KeyCode.Space))
+      {
+            Destroy(other.gameObject);
+            deliTicketInInventory = true;
+            //dop.mustHavePickedUpJam = true;
+      }
+
+        if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
-            keyInInventory = true;
+            rollingPinInventory = true;
         }
     }
 }
