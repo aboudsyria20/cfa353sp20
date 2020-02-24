@@ -10,15 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: PoliceCheif(Intro)
+  m_Name: DialogueOption
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Hello Detective Mole
-  m_responses:
-  - Response: Fuk you
-    Option: {fileID: 0}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
-  - Response: I love you
-    Option: {fileID: 0}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  m_dialogue: 
+  m_responses: []
