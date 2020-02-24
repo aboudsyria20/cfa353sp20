@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Chief(1)
+  m_Name: PSO (Intro)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Hi Detective Mole
+  m_dialogue: Well well Detective fancy seeing you here.
   m_responses:
-  - Response: Hello Chief
-    Option: {fileID: 11400000, guid: fddeee243eff34042a49a61af60d5231, type: 2}
+  - Response: WHERE IS SHE
+    Option: {fileID: 11400000, guid: c5cd962adbe8a2e40b5845617144928c, type: 2}
     MustHavePickedUpJam: 0
     MustHavePickedUpKey: 0
-  - Response: Wassup Bitch
-    Option: {fileID: 11400000, guid: 2aca5f369bb133e4dbe18e87d6f1b10b, type: 2}
+  - Response: I have a few questions for you.
+    Option: {fileID: 11400000, guid: 6d0baa0b14c7015449ea30e20457b9b6, type: 2}
     MustHavePickedUpJam: 0
     MustHavePickedUpKey: 0
