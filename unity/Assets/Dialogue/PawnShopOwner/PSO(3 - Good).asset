@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Chief(1)
+  m_Name: PSO(3 - Good)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Hi Detective Mole
+  m_dialogue: I do, the Baker had red all over him. I ran after him but I couldn't
+    keep up with him.
   m_responses:
-  - Response: Hello Chief
-    Option: {fileID: 11400000, guid: fddeee243eff34042a49a61af60d5231, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
-  - Response: Wassup Bitch
-    Option: {fileID: 11400000, guid: 2aca5f369bb133e4dbe18e87d6f1b10b, type: 2}
+  - Response: Where is he now?
+    Option: {fileID: 11400000, guid: e60882c1c2b7e774295d22b9e9d5b3fb, type: 2}
     MustHavePickedUpJam: 0
     MustHavePickedUpKey: 0

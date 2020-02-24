@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Chief(1)
+  m_Name: Barber(Intro)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Hi Detective Mole
+  m_dialogue: What do you want?
   m_responses:
-  - Response: Hello Chief
-    Option: {fileID: 11400000, guid: fddeee243eff34042a49a61af60d5231, type: 2}
+  - Response: I am here about the murder of the mayor.
+    Option: {fileID: 11400000, guid: 48063d7dedb42e64d93ec5b9aba857e4, type: 2}
     MustHavePickedUpJam: 0
     MustHavePickedUpKey: 0
-  - Response: Wassup Bitch
-    Option: {fileID: 11400000, guid: 2aca5f369bb133e4dbe18e87d6f1b10b, type: 2}
+  - Response: If you don't tell me what I need to know I will arrest you.
+    Option: {fileID: 11400000, guid: c38acb3e8d2f6464f8ba58eb9d94d76f, type: 2}
     MustHavePickedUpJam: 0
     MustHavePickedUpKey: 0
