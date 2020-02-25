@@ -52,6 +52,12 @@ public class PlayerController : MonoBehaviour
   public Text RollingPinText;
   private bool inventoryIsOpen = false;
 
+  [Header("Win Lose States")]
+  public GameObject winScreen;
+  public GameObject loseScreen;
+  private bool playerWin = false;
+  private bool playerLose = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +87,7 @@ public class PlayerController : MonoBehaviour
         //}
 
         Inventory();
+        winLoseStates();
 
     }
 
@@ -115,14 +122,27 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void winLoseStates()
+    {
+      if(playerWin == true)
+      {
+        winScreen.gameObject.SetActive(true);
+      }
+
+      if(playerLose == true)
+      {
+        loseScreen.gameObject.SetActive(true);
+      }
+    }
+
     void OnTriggerStay(Collider other)
     {
       if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
             deliTicketInInventory = true;
-            Debug.Log("Picked up Ticket");
             //dop.MustHavePickedUpTicket = true;
+            Debug.Log("Picked up Ticket");
       }
 
 
@@ -131,11 +151,13 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             deliTicketInInventory = true;
             //dop.mustHavePickedUpJam = true;
+            Debug.Log("Picked up Jar of Jam");
       }
 
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
             rollingPinInventory = true;
+            Debug.Log("Picked up Rolling Pin");
         }
     }
 }
