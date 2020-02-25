@@ -58,6 +58,10 @@ public class PlayerController : MonoBehaviour
   private bool playerWin = false;
   private bool playerLose = false;
 
+  [Header("Win Lose States")]
+  public GameObject pauseScreen;
+  private bool gameIsPaused = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,8 +73,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      float horiMove = Input.GetAxis("Horizontal");
-      float vertMove = Input.GetAxis("Vertical");
+      float horiMove = Input.GetAxisRaw("Horizontal");
+      float vertMove = Input.GetAxisRaw("Vertical");
 
       Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
     speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
@@ -88,6 +92,7 @@ public class PlayerController : MonoBehaviour
 
         Inventory();
         winLoseStates();
+        PauseGame();
 
     }
 
@@ -111,7 +116,7 @@ public class PlayerController : MonoBehaviour
           inventoryIsOpen = true;
       }
 
-      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == true)
+      else if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == true)
       {
         inventoryPanel.gameObject.SetActive(false);
         deliTicketText.gameObject.SetActive(false);
@@ -129,9 +134,23 @@ public class PlayerController : MonoBehaviour
         winScreen.gameObject.SetActive(true);
       }
 
-      if(playerLose == true)
+      else if(playerLose == true)
       {
         loseScreen.gameObject.SetActive(true);
+      }
+    }
+
+    public void PauseGame()
+    {
+      if(Input.GetKeyDown(KeyCode.P) && gameIsPaused == false)
+      {
+        pauseScreen.gameObject.SetActive(true);
+        gameIsPaused = true;
+      }
+      else if(Input.GetKeyDown(KeyCode.P) && gameIsPaused == true)
+      {
+          pauseScreen.gameObject.SetActive(false);
+        gameIsPaused = false;
       }
     }
 
@@ -145,11 +164,10 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Picked up Ticket");
       }
 
-
       if (other.tag == "JamJar" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
-            deliTicketInInventory = true;
+            jarOfJamInventory = true;
             //dop.mustHavePickedUpJam = true;
             Debug.Log("Picked up Jar of Jam");
       }
