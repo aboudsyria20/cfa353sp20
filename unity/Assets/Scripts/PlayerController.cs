@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
 
   [Header("Player Stats")]
-  public Rigidbody rb;
+  public Rigidbody2D rb2d;
   private Vector3 playerPosition;
   public float playerSpeed = 10;
 
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
-      rb.velocity = new Vector3 (horiMove * playerSpeed, vertMove * playerSpeed);
+      rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
 
       //Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
     //speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
