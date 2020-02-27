@@ -9,16 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Barber(Intro)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: What do you want?
-  m_responses:
-  - Response: I am here about the murder of the mayor.
-    Option: {fileID: 11400000, guid: 48063d7dedb42e64d93ec5b9aba857e4, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
-  - Response: If you don't tell me what I need to know I will arrest you.
-    Option: {fileID: 11400000, guid: c38acb3e8d2f6464f8ba58eb9d94d76f, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  m_dialogue: 
+  m_responses: []

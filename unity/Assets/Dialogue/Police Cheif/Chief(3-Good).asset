@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Butcher(2-2)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Yes, that sleezy pawn shop owner ran off after I saw him near the body
-    of the mayor.
+  m_Name: Chief(3-Good)
+  m_EditorClassIdentifier: 
+  m_dialogue: Someone murdered the mayor, we need you to figure out who did it.
   m_responses:
-  - Response: 
-    Option: {fileID: 0}
+  - Response: Alright, can you point me in the direction in a suspect.
+    Option: {fileID: 11400000, guid: 95bf3d19d2b634a4faafac8f1b0c7fc7, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

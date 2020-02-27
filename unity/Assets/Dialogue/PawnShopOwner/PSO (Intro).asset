@@ -9,16 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: PSO (Intro)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Well well Detective fancy seeing you here.
-  m_responses:
-  - Response: WHERE IS SHE
-    Option: {fileID: 11400000, guid: c5cd962adbe8a2e40b5845617144928c, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
-  - Response: I have a few questions for you.
-    Option: {fileID: 11400000, guid: 6d0baa0b14c7015449ea30e20457b9b6, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  m_dialogue: 
+  m_responses: []

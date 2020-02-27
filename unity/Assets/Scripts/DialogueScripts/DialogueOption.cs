@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "DialogueOptions", menuName = "ScriptableObjects/DialogueOption")]
-public class DialogueOptions : ScriptableObject
+[CreateAssetMenu(fileName = "DialogueOption", menuName = "ScriptableObjects/DialogueOption")]
+public class DialogueOption : ScriptableObject
 {
     [SerializeField] private string m_dialogue;
     public string dialogue { get { return m_dialogue; } set { m_dialogue = value; } }
@@ -16,7 +16,7 @@ public class DialogueOptions : ScriptableObject
 public class DialogueResponse
 {
     public string Response;
-    public DialogueOptions Option;
+    public DialogueOption Option;
     public bool mustHavePickedUpJam;
     public bool mustHavePickedUpKey;
     public bool mustHavePickedUpTicket;
@@ -27,3 +27,5 @@ public class DialogueResponse
     public bool canDigKey;
     public bool canOpenChest;
 }
+
+

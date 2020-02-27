@@ -16,7 +16,7 @@ public class DialoguePanel : MonoBehaviour
         m_characterImage.SetNativeSize();
     }
 
-    public void Show(DialogueOptions dialogueOption)
+    public void Show(DialogueOption dialogueOption)
     {
         this.gameObject.SetActive(true);
 

@@ -9,16 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butcher(intro)
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Why are you here?
+  m_dialogue: Oh, hello detective
   m_responses:
-  - Response: The Chief said you had information on the murder.
-    Option: {fileID: 11400000, guid: cd269a905a3649c4eb549c9f95b44994, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
-  - Response: That's for me to know only.
-    Option: {fileID: 11400000, guid: 59413ea42f463904db8459ef75aba1ab, type: 2}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  - Response: Hello, I hear you have some information on the murder of the mayor
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0

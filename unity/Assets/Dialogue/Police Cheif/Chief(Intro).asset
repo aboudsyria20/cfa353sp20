@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Hello detective
   m_responses:
   - Response: Goodevening Chief
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8d64ca3ab8452fc4cb4749924d745974, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
-  - Response: Wassup Bitch
+  - Response: 'Wassup '
     Option: {fileID: 11400000, guid: 2aca5f369bb133e4dbe18e87d6f1b10b, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
