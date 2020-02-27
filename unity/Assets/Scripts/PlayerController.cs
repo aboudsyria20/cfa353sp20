@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
   [Header("Player Stats")]
   public Rigidbody rb;
   private Vector3 playerPosition;
-  public float playerSpeed = 20;
+  public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
   //DialogueOptions dop;
@@ -58,9 +58,12 @@ public class PlayerController : MonoBehaviour
   private bool playerWin = false;
   private bool playerLose = false;
 
-  [Header("Win Lose States")]
+  [Header("Pause States")]
   public GameObject pauseScreen;
   private bool gameIsPaused = false;
+
+  [Header("Screen Checks")]
+  private bool isInDialog = false;
 
     // Start is called before the first frame update
     void Start()
@@ -105,7 +108,7 @@ public class PlayerController : MonoBehaviour
 
     public void Inventory()
     {
-      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false)
+      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false && gameIsPaused == false && isInDialog == false)
       {
         inventoryPanel.gameObject.SetActive(true);
           if(deliTicketInInventory == true)
