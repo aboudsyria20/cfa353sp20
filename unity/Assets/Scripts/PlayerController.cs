@@ -76,9 +76,11 @@ public class PlayerController : MonoBehaviour
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
-      Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
-    speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
-    rb.MovePosition(rb.transform.position + speedVect);
+      rb.velocity = new Vector3 (horiMove * playerSpeed, vertMove * playerSpeed);
+
+      //Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
+    //speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;
+    //rb.MovePosition(rb.transform.position + speedVect);
 
     //if(Input.GetKeyUp(KeyCode.W))
     //{
@@ -93,6 +95,11 @@ public class PlayerController : MonoBehaviour
         Inventory();
         winLoseStates();
         PauseGame();
+
+    }
+
+    void FixedUpdate()
+    {
 
     }
 
