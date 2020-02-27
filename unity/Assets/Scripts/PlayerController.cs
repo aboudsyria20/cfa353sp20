@@ -27,15 +27,15 @@ public class PlayerController : MonoBehaviour
   public GameObject jellyDonut;
 
   [Header("Evidence in Inventory")]
-  private bool keyInInventory = false;
-  private bool rollingPinInventory = false;
-  private bool diamondNecklaceInventory = false;
-  private bool jarOfJamInventory = false;
-  private bool footprintsInInventory = false;
-  private bool frozenFishInInventory = false;
-  private bool butchersKnifeInInventory = false;
-  private bool deliTicketInInventory = false;
-  private bool jellyDonutInInventory = false;
+  public bool keyInInventory = false;
+  public bool rollingPinInventory = false;
+  public bool diamondNecklaceInventory = false;
+  public bool jarOfJamInventory = false;
+  public bool footprintsInInventory = false;
+  public bool frozenFishInInventory = false;
+  public bool butchersKnifeInInventory = false;
+  public bool deliTicketInInventory = false;
+  public bool jellyDonutInInventory = false;
 
   [Header("Can Get Specific Evidence")]
   private bool canGetJellyDonut = false;

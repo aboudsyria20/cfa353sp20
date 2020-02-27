@@ -10,6 +10,8 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private Transform m_buttonParent;
     [SerializeField] private GameObject m_responsePrefab;
 
+    [SerializeField] private PlayerController m_playerController;
+
     public void SetCharacter(Characters character)
     {
         m_characterImage.sprite = character.InterviewSprite;
@@ -31,6 +33,11 @@ public class DialoguePanel : MonoBehaviour
 
         for (int i = 0; i < dialogueOption.responses.Length; i++)
         {
+            DialogueResponse response = dialogueOption.responses[i];
+            if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
+            {
+                continue; //don't spawn the button
+            }
             GameObject buttonObject = Instantiate(m_responsePrefab, m_buttonParent);
             Response button = buttonObject.GetComponent<Response>();
             button.Set(this, dialogueOption.responses[i]);
