@@ -1667,6 +1667,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: 2ff3fd0832ee6d44ba8236984dfe14ea, type: 2}
   m_initialOption: {fileID: 11400000, guid: 949c8cb1d32a4c241832b3eb9d07b545, type: 2}
+  playerTalkedToMe: 0
 --- !u!1 &505941953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +1985,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: 2572289b3e4a90c47948c637d3dc7c50, type: 2}
   m_initialOption: {fileID: 11400000, guid: bc5c05d0f3bb5d44f904dd19be327708, type: 2}
+  playerTalkedToMe: 0
 --- !u!1 &596270178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3080,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: 4e102f7b051a66c4fa71787fa6e24224, type: 2}
   m_initialOption: {fileID: 11400000, guid: 0e89abfeb8f22d341b8f014b7a7307a4, type: 2}
+  playerTalkedToMe: 0
 --- !u!1001 &782157673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3605,6 +3608,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: abb63c90019a8aa449623cc688f40ee5, type: 2}
   m_initialOption: {fileID: 11400000, guid: 806e4c8ef5908c1489898f484c2d1b60, type: 2}
+  playerTalkedToMe: 1
 --- !u!1 &916886483
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,6 +4527,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: 28d181d7720341b44a62e6612575d52b, type: 2}
   m_initialOption: {fileID: 11400000, guid: 5f4ff47bf054c8c4a84e5fafa2afe608, type: 2}
+  playerTalkedToMe: 0
 --- !u!1 &1113005506
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,6 +6332,7 @@ MonoBehaviour:
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 0}
   m_initialOption: {fileID: 0}
+  playerTalkedToMe: 0
 --- !u!1001 &1637006922
 PrefabInstance:
   m_ObjectHideFlags: 0

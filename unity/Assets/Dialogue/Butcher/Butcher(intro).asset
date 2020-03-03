@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Oh, hello detective
   m_responses:
   - Response: Hello, I hear you have some information on the murder of the mayor
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: cd269a905a3649c4eb549c9f95b44994, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,3 +25,4 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}

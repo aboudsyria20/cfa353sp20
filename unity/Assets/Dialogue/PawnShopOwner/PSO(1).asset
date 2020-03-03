@@ -10,13 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Butcher(2-2)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Yes, that sleezy pawn shop owner ran off after I saw him near the body
-    of the mayor.
+  m_Name: PSO(1)
+  m_EditorClassIdentifier: 
+  m_dialogue: Why do you wanna know?
   m_responses:
-  - Response: Thank you I will be on my way.
+  - Response: Never mind. I gotta go.
     Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}
+  - Response: It's official police business.
+    Option: {fileID: 11400000, guid: c5fd54fb622a1be44bb2cbfcd48c9db0, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
