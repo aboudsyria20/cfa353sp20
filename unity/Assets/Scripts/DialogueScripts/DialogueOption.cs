@@ -26,6 +26,7 @@ public class DialogueResponse
     public bool canOpenFishersBoat;
     public bool canDigKey;
     public bool canOpenChest;
+    public Characters mustTalkToCharacter;
 }
 
 

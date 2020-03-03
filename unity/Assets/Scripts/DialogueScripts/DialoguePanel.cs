@@ -38,6 +38,31 @@ public class DialoguePanel : MonoBehaviour
             {
                 continue; //don't spawn the button
             }
+
+            bool hasMetCharacterRequirement = true;
+            if(response.mustTalkToCharacter != null) //have a character that we need to talk to
+            {
+                SceneCharacters[] allCharacters = GameObject.FindObjectsOfType<SceneCharacters>();
+                for(int j=0; j<allCharacters.Length; j++)
+                {
+                    Characters character = allCharacters[j].Character;
+                    if(character == null) continue; //just in case the character is not assigned
+                    if(response.mustTalkToCharacter.Name == character.Name) //we've found the character we need
+                    {
+                        if(!allCharacters[j].playerTalkedToMe)
+                        {
+                            hasMetCharacterRequirement = false;
+                        }
+                    }
+                }
+            }
+
+            if(!hasMetCharacterRequirement)
+            {
+                continue;
+            }
+            
+
             GameObject buttonObject = Instantiate(m_responsePrefab, m_buttonParent);
             Response button = buttonObject.GetComponent<Response>();
             button.Set(this, dialogueOption.responses[i]);
