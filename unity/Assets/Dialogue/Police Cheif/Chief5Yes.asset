@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief(4Good)
+  m_Name: Chief5Yes
   m_EditorClassIdentifier: 
-  m_dialogue: Yes go talk to Butcher Bunny, she lives to the left of here on the
-    upside.
+  m_dialogue: Keep looking detective. You'll get to the bottom of this.
   m_responses:
   - Response: I will be on my way then.
     Option: {fileID: 0}
@@ -26,4 +25,5 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
-    mustTalkToCharacter: {fileID: 0}
+    mustTalkToCharacter: {fileID: 11400000, guid: 2ff3fd0832ee6d44ba8236984dfe14ea,
+      type: 2}
