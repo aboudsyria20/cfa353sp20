@@ -4377,10 +4377,10 @@ GameObject:
   - component: {fileID: 1111565320}
   - component: {fileID: 1111565319}
   - component: {fileID: 1111565318}
+  - component: {fileID: 1111565322}
   - component: {fileID: 1111565321}
   - component: {fileID: 1111565317}
   - component: {fileID: 1111565316}
-  - component: {fileID: 1111565322}
   m_Layer: 0
   m_Name: ShopRacoon
   m_TagString: ShopRacoon
@@ -4521,15 +4521,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1111565315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2057c842f1f47f281612aa47248f9e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fae05c7ce43ac149825b9b44989b08e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_dialoguePanel: {fileID: 1113005509}
   m_character: {fileID: 11400000, guid: 28d181d7720341b44a62e6612575d52b, type: 2}
-  m_initialOption: {fileID: 11400000, guid: 9ec4280adb241354ca8303d93331d1ce, type: 2}
+  m_initialOption: {fileID: 11400000, guid: 5f4ff47bf054c8c4a84e5fafa2afe608, type: 2}
   playerTalkedToMe: 0
-  m_jellyDonutOption: {fileID: 11400000, guid: 3b9571fb386ab4afd97cd00d713a1c1a, type: 2}
-  m_playerController: {fileID: 1625326676}
 --- !u!1 &1113005506
 GameObject:
   m_ObjectHideFlags: 0

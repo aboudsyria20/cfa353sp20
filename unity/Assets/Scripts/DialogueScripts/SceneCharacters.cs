@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SceneCharacters : MonoBehaviour
 {
-    [SerializeField] private DialoguePanel m_dialoguePanel;
+    [SerializeField] protected DialoguePanel m_dialoguePanel;
     [SerializeField] private Characters m_character;
     public Characters Character { get { return m_character; } }
-    [SerializeField] private DialogueOption m_initialOption;
+    [SerializeField] protected DialogueOption m_initialOption;
 
     public bool playerTalkedToMe = false;
 
@@ -16,6 +16,12 @@ public class SceneCharacters : MonoBehaviour
         playerTalkedToMe = true;
         
         m_dialoguePanel.SetCharacter(m_character);
+
+        ShowDialogue();
+    }
+
+    public virtual void ShowDialogue()
+    {
         m_dialoguePanel.Show(m_initialOption);
     }
 }
