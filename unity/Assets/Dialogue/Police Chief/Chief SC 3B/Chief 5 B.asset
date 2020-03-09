@@ -13,4 +13,19 @@ MonoBehaviour:
   m_Name: Chief 5 B
   m_EditorClassIdentifier: 
   m_dialogue: Keep looking detective. You'll get to the bottom of this.
-  m_responses: []
+  m_responses:
+  - Response: alright
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

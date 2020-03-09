@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: 'I want to stop, but I was too afraid to tell anyone. '
   m_responses:
   - Response: How do I know you're telling the truth?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8f82cb7a91b574ac0afffeefae37ae9b, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Okay. Can I have my jelly donut now?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 11ff9925149fc4e79a8728d17d504449, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

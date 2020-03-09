@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Ummm... Talk travels fast in this small town.
   m_responses:
   - Response: But you've been here the whole time.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a1f1d3d0e744849869038523fa3a96ce, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -41,6 +41,6 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0

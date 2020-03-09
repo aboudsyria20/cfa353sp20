@@ -12,6 +12,7 @@ public class DialoguePanel : MonoBehaviour
 
     [SerializeField] private PlayerController m_playerController;
 
+    public PlayerController PlayerController { get { return m_playerController; } }
     public void SetCharacter(Characters character)
     {
         m_characterImage.sprite = character.InterviewSprite;
@@ -38,6 +39,10 @@ public class DialoguePanel : MonoBehaviour
             if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
             {
                 continue; //don't spawn the button
+            }
+            if(response.mustHavePickedUpTicket && !m_playerController.deliTicketInInventory)
+            {
+                continue;
             }
 
             bool hasMetCharacterRequirement = true;

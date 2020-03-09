@@ -14,4 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: "Good work detective. It looks like a ticket to the Butcher\u2019s
     shop. Better start your investigation there."
-  m_responses: []
+  m_responses:
+  - Response: I'll go have a talk with him.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    talkedToChief: 0
+    canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

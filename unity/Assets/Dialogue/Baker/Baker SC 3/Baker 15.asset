@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Really?
   m_responses:
   - Response: No, not really. It's blood!
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: c97692df8312840f8a03e4074e714aa2, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,4 +25,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

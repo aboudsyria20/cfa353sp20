@@ -25,15 +25,14 @@ public class DialogueResponse
     public bool mustHavePickedUpKey;
     public bool mustHavePickedUpTicket;
     public bool mustHaveJellyDonut;
-    public bool mustHavePawnInformation;
-    public bool mustHaveBarberInformation;
-    public bool canOpenFishersBoat;
-    public bool canDigKey;
-    public bool canOpenChest;
+   // public bool mustHavePawnInformation;
+   // public bool mustHaveBarberInformation;
+  //  public bool canOpenFishersBoat;
+  //  public bool canOpenChest;
     public bool playerWin;
     public bool playerLose;
     public Characters mustTalkToCharacter;
-
+    public bool talkedToChief;
     public bool hadJellyConvo = false;
 
 }

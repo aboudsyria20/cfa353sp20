@@ -26,11 +26,11 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: No.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 1164c358ecf63431cb253fbcc1049fe8, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

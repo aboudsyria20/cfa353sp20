@@ -18,4 +18,19 @@ MonoBehaviour:
     who wanted to cut funding for the police force. She said the town was too peaceful.
     That we were needed. But I gave her a reason to keep us around. Good job detective,
     you've solved the  mystery.
-  m_responses: []
+  m_responses:
+  - Response: 
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    playerWin: 1
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

@@ -11,14 +11,15 @@ public class ShopKeeperSceneCharacter : SceneCharacters
 
     public override void ShowDialogue()
     {
-        if(m_playerController.jellyDonutInInventory)
-        {
-            m_dialoguePanel.Show(m_jellyDonutOption);
-        }
-        else if (m_playerController.hadDonutConvo == true)
+         if (m_playerController.hadDonutConvo == true)
         {
             m_dialoguePanel.Show(m_scramOption);
         }
+       else if (m_playerController.jellyDonutInInventory)
+        {
+            m_dialoguePanel.Show(m_jellyDonutOption);
+        }
+        
         else 
         {
             m_dialoguePanel.Show(m_initialOption);

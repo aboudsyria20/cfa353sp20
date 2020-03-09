@@ -26,7 +26,7 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: The Butcher did it.
@@ -41,7 +41,7 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: The Baker did it.
@@ -56,7 +56,7 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: The Barber did it.
@@ -71,11 +71,11 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: I'm not sure. I need more time.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: b144c939d84d146ed8c153bf0c621e3f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

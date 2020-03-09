@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: I think the evidence all points to the same place.
   m_responses:
   - Response: What way is that?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 64d43983ebcd74dc2bfea9a076e5828b, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
