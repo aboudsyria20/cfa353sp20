@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief6
+  m_Name: Chief 11
   m_EditorClassIdentifier: 
-  m_dialogue: Alright detective. I need an answer. Who is the killer?
+  m_dialogue: Look kid. I don't know what you're implying, but I won't have any of
+    it.
   m_responses:
-  - Response: The Barber
+  - Response: You were at the bakery when the rolling pin went missing.
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -25,8 +26,11 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: The Butcher
+    hadJellyConvo: 0
+  - Response: You knew were the butcher's secret compartment was.
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -37,8 +41,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: The Baker
+    hadJellyConvo: 0
+  - Response: You were at the bakery when the rolling pin went missing. And knew
+      were the butcher's secret compartment was.
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -49,8 +57,11 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: The Pawn Shop owner
+    hadJellyConvo: 0
+  - Response: You're right I'm sorry
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -61,16 +72,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: I don't know yet. I need more time.
-    Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

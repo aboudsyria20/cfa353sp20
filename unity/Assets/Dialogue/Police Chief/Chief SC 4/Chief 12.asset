@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief(3-Good)
+  m_Name: Chief 12
   m_EditorClassIdentifier: 
-  m_dialogue: Someone murdered the mayor, we need you to figure out who did it.
+  m_dialogue: can we agree the baker did it?
   m_responses:
-  - Response: Alright, can you point me in the direction in a suspect.
-    Option: {fileID: 11400000, guid: 95bf3d19d2b634a4faafac8f1b0c7fc7, type: 2}
+  - Response: Yes.
+    Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,3 +25,22 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
+  - Response: No.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

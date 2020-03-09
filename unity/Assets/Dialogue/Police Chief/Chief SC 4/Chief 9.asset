@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief(Intro)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Hello detective
+  m_Name: Chief 9
+  m_EditorClassIdentifier: 
+  m_dialogue: It was the baker's rolling pin that killed the mayor. She obviously
+    did it.
   m_responses:
-  - Response: Goodevening Chief
-    Option: {fileID: 11400000, guid: 8d64ca3ab8452fc4cb4749924d745974, type: 2}
+  - Response: How did you know that? I haven't told you that yet.
+    Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,8 +26,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
-  - Response: 'Wassup '
-    Option: {fileID: 11400000, guid: 2aca5f369bb133e4dbe18e87d6f1b10b, type: 2}
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
+  - Response: I guess you're right. The baker must have done it.
+    Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -36,3 +41,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

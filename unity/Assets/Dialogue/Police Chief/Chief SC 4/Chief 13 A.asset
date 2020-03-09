@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief(4Good)
+  m_Name: Chief 13 A
   m_EditorClassIdentifier: 
-  m_dialogue: Yes go talk to Butcher Bunny, she lives to the left of here on the
-    upside.
+  m_dialogue: I'm warning you, detective. Don't say anything you'll regret.
   m_responses:
-  - Response: I will be on my way then.
+  - Response: You killed the mayor!
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -26,4 +25,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

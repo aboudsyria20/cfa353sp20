@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief(2-1)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: I don't like you!
+  m_Name: Chief 1
+  m_EditorClassIdentifier: 
+  m_dialogue: Detective, I'm glad you're here.
   m_responses:
-  - Response: Sorry, please forgive me!
+  - Response: What happened Chief?
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -25,3 +25,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
