@@ -10,12 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Butcher(intro)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: Oh, hello detective
+  m_Name: Butch 2
+  m_EditorClassIdentifier: 
+  m_dialogue: The mayor was just in yesterday around noon.
   m_responses:
-  - Response: Hello, I hear you have some information on the murder of the mayor
-    Option: {fileID: 11400000, guid: cd269a905a3649c4eb549c9f95b44994, type: 2}
+  - Response: Thanks for the infromation. I gotta go.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}
+  - Response: was anything off about her?
+    Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
