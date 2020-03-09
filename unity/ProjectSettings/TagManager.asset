@@ -55,3 +55,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Characters+Stores
+    uniqueID: 1949827389
+    locked: 0
+  - name: Nature
+    uniqueID: 915683197
+    locked: 0
+  - name: Fence
+    uniqueID: 3233823597
+    locked: 0
+  - name: Ground
+    uniqueID: 4131699447
+    locked: 0
