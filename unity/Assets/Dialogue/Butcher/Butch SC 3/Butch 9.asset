@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Oh my! I, I, I have no idea how that got there.
   m_responses:
   - Response: You gotta give me a better excuse than that.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8bb9485f0bc4242a0a7cdae3e6a40a36, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Likely story.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8bb9485f0bc4242a0a7cdae3e6a40a36, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

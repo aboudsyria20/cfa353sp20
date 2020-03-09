@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: The mayor was just in yesterday around noon.
   m_responses:
   - Response: Thanks for the infromation. I gotta go.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a0b75d57648574bb78d1e20fcbbcdf5f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: was anything off about her?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 9fe4f2abeaa5f4c9cb4ce3bffbfc3454, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

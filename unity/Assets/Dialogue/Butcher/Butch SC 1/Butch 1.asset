@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Hey Mason! What can I get for you?
   m_responses:
   - Response: Nothing for me thanks.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a0b75d57648574bb78d1e20fcbbcdf5f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: When was the last time you saw the mayor?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 7d10295a83baf4c709c31d84e602d5da, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

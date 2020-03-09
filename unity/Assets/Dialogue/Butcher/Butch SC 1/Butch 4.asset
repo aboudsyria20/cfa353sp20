@@ -16,7 +16,7 @@ MonoBehaviour:
     there.
   m_responses:
   - Response: Thanks for your help.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 36457154c76dd4bc29af2dff807d913d, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,4 +26,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

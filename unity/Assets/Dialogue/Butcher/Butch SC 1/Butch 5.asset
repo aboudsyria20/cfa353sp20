@@ -16,7 +16,7 @@ MonoBehaviour:
     Is she alright?
   m_responses:
   - Response: That's police business mam.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a0b75d57648574bb78d1e20fcbbcdf5f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,9 +26,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: She was murdered last night.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 0805a144e3fd64ca083b7979b8c87071, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,4 +41,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

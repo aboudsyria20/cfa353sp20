@@ -16,7 +16,7 @@ MonoBehaviour:
     I have no idea how it  got there.
   m_responses:
   - Response: Are you sure there is no one else who knows about it?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 191773f634d3848cea13852b412adae8, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,9 +26,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Why do you have a secret compartment in the first place?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8fe45de82342f4bbdb994b782042fb38, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,4 +41,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
