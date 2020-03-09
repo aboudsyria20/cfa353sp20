@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Barber(2-Bad)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: I will not help you!
-  m_responses:
-  - Response: Let me appologize.
-    Option: {fileID: 0}
-    MustHavePickedUpJam: 0
-    MustHavePickedUpKey: 0
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
+  m_Name: Barber 14
+  m_EditorClassIdentifier: 
+  m_dialogue: I hope you find the rightr guy detective.
+  m_responses: []

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Barber(Intro)
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOption
-  m_dialogue: 
+  m_Name: Baker 20
+  m_EditorClassIdentifier: 
+  m_dialogue: That's all I know. I hope you get to the bottom of this.
   m_responses: []

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
+  m_Name: Barber 2
+  m_EditorClassIdentifier: 
+  m_dialogue: I uh... I was nowhere. Where were you last night?
+  m_responses:
+  - Response: I know where you were. Just tell me.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}
+  - Response: I was home in bed. What about you?
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}

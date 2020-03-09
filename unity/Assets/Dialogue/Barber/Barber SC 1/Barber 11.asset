@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
+  m_Name: Barber 11
+  m_EditorClassIdentifier: 
+  m_dialogue: Well, there was a little misunderstanding between me and the mayor.
+    That may have ended with a small restraining order.
+  m_responses:
+  - Response: That's it. I'm taking you to the cheif.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}
+  - Response: Oh, well that explains it.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    mustHavePawnInformation: 0
+    mustHaveBarberInformation: 0
+    canOpenFishersBoat: 0
+    canDigKey: 0
+    canOpenChest: 0
+    mustTalkToCharacter: {fileID: 0}
