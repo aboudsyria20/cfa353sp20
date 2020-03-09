@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Yes. I lost one just like it last week. What is it covered with?
   m_responses:
   - Response: Blood.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: c97692df8312840f8a03e4074e714aa2, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Jam
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: b1717078b049741108ab7868c6a834ab, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

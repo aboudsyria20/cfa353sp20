@@ -15,17 +15,13 @@ MonoBehaviour:
   m_dialogue: Detective, I'm glad you're here.
   m_responses:
   - Response: What happened Chief?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 91705c22d04574c3693a7a0bdf9aa4ec, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 1
     hadJellyConvo: 0

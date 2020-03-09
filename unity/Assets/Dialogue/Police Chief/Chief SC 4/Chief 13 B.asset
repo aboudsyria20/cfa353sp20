@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Then who is the culprit?
   m_responses:
   - Response: You killed the mayor!
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 43b6104dfc467468893269a576b52360, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

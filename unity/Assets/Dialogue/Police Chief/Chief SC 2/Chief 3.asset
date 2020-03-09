@@ -15,22 +15,22 @@ MonoBehaviour:
   m_dialogue: Did you find anything?
   m_responses:
   - Response: I found this. (hand over ticket)
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 0ca5ad1958b46412688800a61c2b4672, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    mustHavePickedUpTicket: 1
     mustHaveJellyDonut: 0
     mustHavePawnInformation: 0
     mustHaveBarberInformation: 0
     canOpenFishersBoat: 0
-    canDigKey: 0
+    talkedToChief: 0
     canOpenChest: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: Not yet.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 01736e52147574defa9d1b4639a6e16f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     mustHavePawnInformation: 0
     mustHaveBarberInformation: 0
     canOpenFishersBoat: 0
-    canDigKey: 0
+    talkedToChief: 0
     canOpenChest: 0
     playerWin: 0
     playerLose: 0

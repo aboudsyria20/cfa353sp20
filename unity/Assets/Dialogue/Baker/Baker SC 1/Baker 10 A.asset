@@ -16,7 +16,7 @@ MonoBehaviour:
     woods after the shipment arrives and consume all of it.
   m_responses:
   - Response: '"Alright, do you have any jelly donuts?"'
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 534053eb27d8a4ed19a14c3fe9eb91f1, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,4 +26,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

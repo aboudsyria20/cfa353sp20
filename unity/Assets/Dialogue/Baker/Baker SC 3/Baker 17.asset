@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: I have no clue. Like I said, I haven't seen it in a week.
   m_responses:
   - Response: Do you remember the exact time and place you last saw it?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 2d5e448aff8ce442793041a1a947e95f, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Well that's awfully convenient.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 9dfea7f5707244d37a7d1f30ff96d80b, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

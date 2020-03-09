@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Oh my. Why would it be covered in blood?
   m_responses:
   - Response: I don't know. Why don't you tell me?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: cb9fee8a321ca4d5d9b3a611a0442f24, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: That's what I'm asking you.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: cb9fee8a321ca4d5d9b3a611a0442f24, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

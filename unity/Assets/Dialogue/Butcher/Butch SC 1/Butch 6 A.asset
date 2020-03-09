@@ -13,4 +13,15 @@ MonoBehaviour:
   m_Name: Butch 6 A
   m_EditorClassIdentifier: 
   m_dialogue: Oh, okay. Let me know if I can do anything for you.
-  m_responses: []
+  m_responses:
+  - Response: Thank you.
+    Option: {fileID: 0}
+    mustHavePickedUpJam: 0
+    mustHavePickedUpKey: 0
+    mustHavePickedUpTicket: 0
+    mustHaveJellyDonut: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    hadJellyConvo: 0

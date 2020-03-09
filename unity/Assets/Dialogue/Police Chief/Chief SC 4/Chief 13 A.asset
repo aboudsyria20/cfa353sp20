@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: I'm warning you, detective. Don't say anything you'll regret.
   m_responses:
   - Response: You killed the mayor!
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 43b6104dfc467468893269a576b52360, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

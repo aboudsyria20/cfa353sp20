@@ -16,7 +16,7 @@ MonoBehaviour:
     did it.
   m_responses:
   - Response: How did you know that? I haven't told you that yet.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 44fec710803be402fbb440adf80ba003, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -42,6 +42,6 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     playerWin: 0
-    playerLose: 0
+    playerLose: 1
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0

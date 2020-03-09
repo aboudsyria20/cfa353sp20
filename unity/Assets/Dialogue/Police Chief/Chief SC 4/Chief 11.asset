@@ -16,7 +16,7 @@ MonoBehaviour:
     it.
   m_responses:
   - Response: You were at the bakery when the rolling pin went missing.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: You knew were the butcher's secret compartment was.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
     hadJellyConvo: 0
   - Response: You were at the bakery when the rolling pin went missing. And knew
       were the butcher's secret compartment was.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     hadJellyConvo: 0
   - Response: You're right I'm sorry
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 1164c358ecf63431cb253fbcc1049fe8, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

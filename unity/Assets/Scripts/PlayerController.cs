@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
    public bool hadDonutConvo = false;
+    public bool talkedToChief = false;
 
   [Header("Player Stats")]
   public Rigidbody2D rb2d;
@@ -57,8 +58,8 @@ public class PlayerController : MonoBehaviour
   [Header("Win Lose States")]
   public GameObject winScreen;
   public GameObject loseScreen;
-  private bool playerWin = false;
-  private bool playerLose = false;
+  public bool playerWin = false;
+  public bool playerLose = false;
 
   [Header("Pause States")]
   public GameObject pauseScreen;
