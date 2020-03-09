@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
   [Header("Player Stats")]
   public Rigidbody2D rb2d;
+  public Animator anim;
   private Vector3 playerPosition;
   public float playerSpeed = 10;
 
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
        // dop = FindObjectOfType<DialogueOption>();
 
     }
-    
+
 
     // Update is called once per frame
     void Update()
@@ -82,6 +83,11 @@ public class PlayerController : MonoBehaviour
       float vertMove = Input.GetAxisRaw("Vertical");
 
       rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
+      Debug.Log(horiMove);
+
+      anim.SetFloat("Speed", horiMove);
+      anim.SetFloat("YSpeed", vertMove);
+      //anim.SetFloat("Speed", Mathf.Abs(horiMove));
 
       //Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
     //speedVect = speedVect.normalized * playerSpeed * Time.deltaTime;

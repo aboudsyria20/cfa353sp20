@@ -18,6 +18,7 @@ TagManager:
   - BarberBear
   - BakerHippo
   - ButcherBunny
+  - ChiefDog
   layers:
   - Default
   - TransparentFX
