@@ -2607,6 +2607,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2023840320}
     m_Modifications:
+    - target: {fileID: 1577922087755410277, guid: 44e93b21c33e0594498871bbafc5228d,
+        type: 3}
+      propertyPath: m_pc
+      value: 
+      objectReference: {fileID: 1625326676}
     - target: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
         type: 3}
       propertyPath: m_Name
@@ -3088,6 +3093,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2023840320}
     m_Modifications:
+    - target: {fileID: 1577922087755410277, guid: 44e93b21c33e0594498871bbafc5228d,
+        type: 3}
+      propertyPath: m_pc
+      value: 
+      objectReference: {fileID: 1625326676}
     - target: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
         type: 3}
       propertyPath: m_Name
@@ -4528,7 +4538,8 @@ MonoBehaviour:
   m_character: {fileID: 11400000, guid: 28d181d7720341b44a62e6612575d52b, type: 2}
   m_initialOption: {fileID: 11400000, guid: 9ec4280adb241354ca8303d93331d1ce, type: 2}
   playerTalkedToMe: 0
-  m_jellyDonutOption: {fileID: 11400000, guid: 3b9571fb386ab4afd97cd00d713a1c1a, type: 2}
+  m_jellyDonutOption: {fileID: 11400000, guid: 502897f6d902b6f4da7af4d2c7a2ae0e, type: 2}
+  m_scramOption: {fileID: 11400000, guid: 62d4f70f4da148c4cb1bfc29ccbff12f, type: 2}
   m_playerController: {fileID: 1625326676}
 --- !u!1 &1113005506
 GameObject:
@@ -4616,7 +4627,7 @@ MonoBehaviour:
   m_buttonParent: {fileID: 2023840320}
   m_responsePrefab: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
     type: 3}
-  m_playerController: {fileID: 0}
+  m_playerController: {fileID: 1625326676}
 --- !u!222 &1113005510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5436,6 +5447,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2023840320}
     m_Modifications:
+    - target: {fileID: 1577922087755410277, guid: 44e93b21c33e0594498871bbafc5228d,
+        type: 3}
+      propertyPath: m_pc
+      value: 
+      objectReference: {fileID: 1625326676}
     - target: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
         type: 3}
       propertyPath: m_Name
@@ -6292,6 +6308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8e7a5d564e94882b4ba47a3627bf35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hadDonutConvo: 0
   rb2d: {fileID: 1625326671}
   playerSpeed: 10
   key: {fileID: 0}
@@ -6342,6 +6359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2023840320}
     m_Modifications:
+    - target: {fileID: 1577922087755410277, guid: 44e93b21c33e0594498871bbafc5228d,
+        type: 3}
+      propertyPath: m_pc
+      value: 
+      objectReference: {fileID: 1625326676}
     - target: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
         type: 3}
       propertyPath: m_Name

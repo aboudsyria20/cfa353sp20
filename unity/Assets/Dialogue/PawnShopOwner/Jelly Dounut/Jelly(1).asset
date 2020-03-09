@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: PSO(3-1)
+  m_Name: Jelly(1)
   m_EditorClassIdentifier: 
-  m_dialogue: Well I'm not talking.
+  m_dialogue: Is that a jelly donut I smell?
   m_responses:
-  - Response: Thanks for nothing. I gotta go find a real lead.
+  - Response: Nope, you must be smelling things.
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
@@ -26,8 +26,9 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: Come on. There has to be something that'll get you to talk.
-    Option: {fileID: 0}
+    hadJellyConvo: 0
+  - Response: You're darn right it is.
+    Option: {fileID: 11400000, guid: 2d6693b345d21914cb2d445013847f80, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,3 +39,4 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 1

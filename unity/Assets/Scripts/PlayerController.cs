@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+   public bool hadDonutConvo = false;
 
   [Header("Player Stats")]
   public Rigidbody2D rb2d;
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
   public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
-  //DialogueOptions dop;
+  DialogueOption dop;
 
   [Header("Evidence")]
   public GameObject key;
@@ -69,9 +70,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
 
-        //dop = FindObjectOfType<DialogueOptions>();
+       // dop = FindObjectOfType<DialogueOption>();
 
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -139,6 +141,7 @@ public class PlayerController : MonoBehaviour
 
     public void winLoseStates()
     {
+       // if()
       if(playerWin == true)
       {
         winScreen.gameObject.SetActive(true);

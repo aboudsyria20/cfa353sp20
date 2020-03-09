@@ -153,12 +153,12 @@ RectTransform:
   m_Children:
   - {fileID: 150080189}
   m_Father: {fileID: 956214390}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00018748, y: -514}
-  m_SizeDelta: {x: 434.8, y: 107.6}
+  m_AnchoredPosition: {x: 0.000030517578, y: -389.60004}
+  m_SizeDelta: {x: 589.9, y: 83.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30907909
 MonoBehaviour:
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -821,8 +821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888, y: -807}
-  m_SizeDelta: {x: 434.8, y: 107.6}
+  m_AnchoredPosition: {x: -0, y: -617}
+  m_SizeDelta: {x: 589.9, y: 71.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &579400100
 MonoBehaviour:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1393,18 +1393,18 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1401520370}
-  - {fileID: 1198108386}
-  - {fileID: 1307033535}
   - {fileID: 30907908}
+  - {fileID: 1307033535}
+  - {fileID: 1198108386}
+  - {fileID: 1401520370}
   - {fileID: 579400099}
   m_Father: {fileID: 364508551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000011444, y: 357}
-  m_SizeDelta: {x: 1000, y: 150}
+  m_AnchoredPosition: {x: -0.000045776, y: 298}
+  m_SizeDelta: {x: 1000, y: 121.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &956214391
 MonoBehaviour:
@@ -1618,12 +1618,12 @@ RectTransform:
   m_Children:
   - {fileID: 803709977}
   m_Father: {fileID: 956214390}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00018748, y: -371}
-  m_SizeDelta: {x: 434.8, y: 107.6}
+  m_AnchoredPosition: {x: 0.000030517578, y: -278.7}
+  m_SizeDelta: {x: 589.9, y: 83.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198108387
 MonoBehaviour:
@@ -1758,12 +1758,12 @@ RectTransform:
   m_Children:
   - {fileID: 799261265}
   m_Father: {fileID: 956214390}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00018748, y: -662}
-  m_SizeDelta: {x: 434.8, y: 107.6}
+  m_AnchoredPosition: {x: 0.000030517578, y: -504.50003}
+  m_SizeDelta: {x: 589.9, y: 83.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307033536
 MonoBehaviour:
@@ -1898,12 +1898,12 @@ RectTransform:
   m_Children:
   - {fileID: 1910058036}
   m_Father: {fileID: 956214390}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00010518, y: -233.00003}
-  m_SizeDelta: {x: 434.8, y: 107.6}
+  m_AnchoredPosition: {x: 0.000030517578, y: -171.60002}
+  m_SizeDelta: {x: 589.9, y: 83.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401520371
 MonoBehaviour:
@@ -2998,7 +2998,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3153,7 +3153,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0

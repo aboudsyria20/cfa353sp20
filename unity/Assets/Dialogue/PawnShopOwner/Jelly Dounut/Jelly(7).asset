@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: PSO(2)
+  m_Name: Jelly(7)
   m_EditorClassIdentifier: 
-  m_dialogue: What happens if I don't tell ya
+  m_dialogue: And she was checkin to make sure I was running a legitimate business.
   m_responses:
-  - Response: Umm, I dunno? They usually just tell me.
-    Option: {fileID: 0}
+  - Response: What's that supposed to mean?
+    Option: {fileID: 11400000, guid: ca1158d5a9583fd4388ebcaf156ef2bd, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
     canDigKey: 0
     canOpenChest: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: Then you're under arrest?
-    Option: {fileID: 0}
+  - Response: Are you?
+    Option: {fileID: 11400000, guid: ca1158d5a9583fd4388ebcaf156ef2bd, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0

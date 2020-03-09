@@ -33,6 +33,7 @@ public class DialoguePanel : MonoBehaviour
 
         for (int i = 0; i < dialogueOption.responses.Length; i++)
         {
+            
             DialogueResponse response = dialogueOption.responses[i];
             if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
             {
