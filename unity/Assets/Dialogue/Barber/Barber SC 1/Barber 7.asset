@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: What, no! I didn't kill the Mayor.
   m_responses:
   - Response: You didn't?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 28cec42a1287d4f13a60b0d5239aac13, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: How did you know she was dead?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 28cec42a1287d4f13a60b0d5239aac13, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

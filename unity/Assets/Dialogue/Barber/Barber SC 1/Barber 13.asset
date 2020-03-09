@@ -16,7 +16,7 @@ MonoBehaviour:
     the creek. It was too dark to make out their face.
   m_responses:
   - Response: I'll check it out, but I'll be back for you later.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: b6e29597f1d7a49fdb728f0abcadafaa, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,9 +26,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: That would have been nice to know up front.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: b6e29597f1d7a49fdb728f0abcadafaa, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,4 +41,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

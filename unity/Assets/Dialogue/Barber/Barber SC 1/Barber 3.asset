@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Yeah, me too. At home. In bed.
   m_responses:
   - Response: I know where you were. Just tell me.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 620835a86321e4c29aca499935e3b775, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,7 +25,10 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: My bad. I'll be on my way.
     Option: {fileID: 0}
     mustHavePickedUpJam: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

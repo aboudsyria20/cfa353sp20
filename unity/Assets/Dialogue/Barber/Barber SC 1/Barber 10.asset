@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Not exactly.
   m_responses:
   - Response: Say no more. I should take you to the chief.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: What does that mean?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: e0ac4ef960ddf47e0becbfaa400cbedd, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

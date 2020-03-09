@@ -16,7 +16,7 @@ MonoBehaviour:
     find her dead.
   m_responses:
   - Response: Why were you in the woods at night?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: ded9150933da14d1188b97d974bef816, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,9 +26,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Why didn't you report it to the police?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a01068097f2914bd294001bae053ebc5, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -38,4 +41,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

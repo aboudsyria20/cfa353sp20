@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Really, you know I was at the park last night?
   m_responses:
   - Response: I do now.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: de406a4df93f241f2ae52b45ec21cfa8, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: Of course I do.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 8b1cd1187193a47a08c25b344ad93ae6, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   m_dialogue: Wait. I would never hurt her. You gotta believe me.
   m_responses:
   - Response: Give me one good reason to believe you.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: a67acf790bb0147158029857a8c505dc, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -25,9 +25,12 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
   - Response: I've heard enough. Anything you missed?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: cac11b65414054691809167e45470d2c, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -37,4 +40,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0

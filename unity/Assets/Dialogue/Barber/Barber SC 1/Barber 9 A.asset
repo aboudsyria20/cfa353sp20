@@ -16,7 +16,7 @@ MonoBehaviour:
     be there.
   m_responses:
   - Response: Was she expecting you?
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: dcedfb260f07a4648bfa571bb7f0aecc, type: 2}
     mustHavePickedUpJam: 0
     mustHavePickedUpKey: 0
     mustHavePickedUpTicket: 0
@@ -26,4 +26,7 @@ MonoBehaviour:
     canOpenFishersBoat: 0
     canDigKey: 0
     canOpenChest: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    hadJellyConvo: 0
