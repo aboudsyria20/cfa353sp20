@@ -12,8 +12,8 @@ public class Response : MonoBehaviour
     private DialogueResponse m_response;
     [SerializeField] private PlayerController m_pc;
 
-    //public GameObject winScreen;
-    //public GameObject loseScreen;
+    public GameObject winScreen;
+    public GameObject loseScreen;
     
     public void Set(DialoguePanel panel, DialogueResponse response)
     {
@@ -22,12 +22,24 @@ public class Response : MonoBehaviour
         m_text.text = response.Response;
         this.gameObject.GetComponent<Button>().onClick.AddListener(OnClick);
     }
-   
+
     private void OnClick()
     {
         if (m_response.Option == null)
         {
             m_dialoguePanel.Hide();
+
+            // win or lose
+            if (m_response.playerLose == true)
+            {
+                //loseScreen.SetActive(true);
+                m_dialoguePanel.PlayerController.playerLose = true;
+            }
+            if (m_response.playerWin == true)
+            {
+                //  winScreen.SetActive(true);
+                m_dialoguePanel.PlayerController.playerWin = true;
+            }
         }
         else
         {
@@ -43,19 +55,6 @@ public class Response : MonoBehaviour
             {
                 m_dialoguePanel.PlayerController.talkedToChief = true;
             }
-            // win or lose
-            if(m_response.playerLose == true)
-            {
-                //loseScreen.SetActive(true);
-                m_dialoguePanel.PlayerController.playerLose = true;
-            }
-            if (m_response.playerWin == true)
-            {
-              //  winScreen.SetActive(true);
-               m_dialoguePanel.PlayerController.playerWin = true;
-            }
-           
         }
-      
     }
 }
