@@ -21,19 +21,29 @@ public class DialogueResponse
     
     public string Response;
     public DialogueOption Option;
-    public bool mustHavePickedUpJam;
-    public bool mustHavePickedUpKey;
-    public bool mustHavePickedUpTicket;
+
+    //public bool mustHavemustHavePickedUpKey;
+    //Barbetr Dialogue
+    public bool hadBarberConvo;
+    //Pawn Shop Owner 
+    public bool hadJellyConvo = false;
     public bool mustHaveJellyDonut;
-   // public bool mustHavePawnInformation;
-   // public bool mustHaveBarberInformation;
-  //  public bool canOpenFishersBoat;
-  //  public bool canOpenChest;
+    // Baker Dialogue
+    public bool hadBakerRollingPinConvo;
+    public bool tellNoOne;
+    // Butcher Dialogue
+    public bool butchCrying;
+    public bool butchCurious;
+    public bool butchConvoTwo;
+    //Win / Lose screen
     public bool playerWin;
     public bool playerLose;
+    // making sure to talk to players
     public Characters mustTalkToCharacter;
+    //Police Cheif 
     public bool talkedToChief;
-    public bool hadJellyConvo = false;
+    public bool mustHavePickedUpTicket;
+   
 
 }
 

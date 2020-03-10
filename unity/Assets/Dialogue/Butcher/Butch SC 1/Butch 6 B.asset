@@ -16,12 +16,14 @@ MonoBehaviour:
   m_responses:
   - Response: Sorry to say so early.
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    mustHAvemustHavePickedUpKey: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    butchCrying: 1
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
-    hadJellyConvo: 0
+    mustHavePickedUpTicket: 0

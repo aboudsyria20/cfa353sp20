@@ -18,16 +18,15 @@ MonoBehaviour:
   m_responses:
   - Response: Alright, I'll see if I can find anything else. Don't go anywhere.
     Option: {fileID: 11400000, guid: b80651645792947a59b03f84cfc9956e, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 1
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

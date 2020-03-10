@@ -55,6 +55,28 @@ public class Response : MonoBehaviour
             {
                 m_dialoguePanel.PlayerController.talkedToChief = true;
             }
+            //Butcher Booleans 
+            if (m_response.butchCrying == true)
+            {
+                m_dialoguePanel.PlayerController.butchCrying = true;
+            }
+            if (m_response.butchCurious == true)
+            {
+                m_dialoguePanel.PlayerController.butchCurious = true;
+            }
+            //Baker Booleans
+            if (m_response.tellNoOne == true)
+            {
+                m_dialoguePanel.PlayerController.tellNoOne = true;
+            }
+            if (m_response.hadBakerRollingPinConvo == true)
+            {
+                m_dialoguePanel.PlayerController.hadRollingPinConvo = true;
+            }
+            if (m_response.hadBarberConvo == true)
+            {
+                m_dialoguePanel.PlayerController.hadBarberConvo = true;
+            }
         }
     }
 }
