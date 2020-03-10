@@ -143,12 +143,12 @@ public class PlayerController : MonoBehaviour
         inventoryPanel.gameObject.SetActive(true);
           if(deliTicketInInventory == true)
           {
-              deliTicketText.gameObject.SetActive(true);
+              //deliTicketText.gameObject.SetActive(true);
               inventoryDeliTicket.gameObject.SetActive(true);
           }
           if(jarOfJamInInventory == true)
           {
-              jarOfJamText.gameObject.SetActive(true);
+              //jarOfJamText.gameObject.SetActive(true);
               inventoryJarOfJam.gameObject.SetActive(true);
           }
           if(jellyDonutInInventory == true)
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
           }
           if(rollingPinInInventory == true)
           {
-              RollingPinText.gameObject.SetActive(true);
+              //RollingPinText.gameObject.SetActive(true);
               inventoryRollingPin.gameObject.SetActive(true);
           }
           if(keyInInventory == true)

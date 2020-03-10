@@ -12,7 +12,7 @@ public class Baker : SceneCharacters
 
     public override void ShowDialogue()
     {
-          if (m_playerController.rollingPinInventory)
+          if (m_playerController.rollingPinInInventory)
         {
             m_dialoguePanel.Show(m_rollingPin);
         }
@@ -24,11 +24,10 @@ public class Baker : SceneCharacters
         {
             m_dialoguePanel.Show(m_tellNoOne);
         }
-       
+
         else
         {
             m_dialoguePanel.Show(m_initialOption);
         }
       }
     }
-
