@@ -6,8 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    // pawn shop owner dialogue
    public bool hadDonutConvo = false;
+    // cheif dialogue
     public bool talkedToChief = false;
+    // butcher dialogue
+    public bool butchCrying = false;
+    public bool butchCurious = false;
+    public bool hadButchConvoTwo = false;
+    //Baker dialogue
+    public bool tellNoOne;
+    public bool hadRollingPinConvo;
+    //Barber convo
+    public bool hadBarberConvo;
+
 
   [Header("Player Stats")]
   public Rigidbody2D rb2d;

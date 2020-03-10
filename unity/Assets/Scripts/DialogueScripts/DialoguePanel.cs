@@ -36,10 +36,10 @@ public class DialoguePanel : MonoBehaviour
         {
             
             DialogueResponse response = dialogueOption.responses[i];
-            if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
+           /*if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
             {
                 continue; //don't spawn the button
-            }
+            }*/
             if(response.mustHavePickedUpTicket && !m_playerController.deliTicketInInventory)
             {
                 continue;
