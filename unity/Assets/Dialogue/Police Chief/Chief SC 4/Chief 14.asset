@@ -16,21 +16,21 @@ MonoBehaviour:
     So you figured it out. No point in trying to deny it any longer. I know when
     I'm beaten. I underestimated you. It's true. I killed the mayor. She was a fool
     who wanted to cut funding for the police force. She said the town was too peaceful.
-    That we were needed. But I gave her a reason to keep us around. Good job detective,
-    you've solved the  mystery.
+    That we weren't needed, but I gave her a reason to keep us around. Good job detective,
+    you've solved the mystery.
   m_responses:
   - Response: 
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 1
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
