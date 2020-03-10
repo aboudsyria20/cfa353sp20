@@ -15,7 +15,7 @@ public class ButcherCharm : SceneCharacters
 
     public override void ShowDialogue()
     {
-         if (m_playerController.rollingPinInventory)
+         if (m_playerController.rollingPinInInventory)
         {
             m_dialoguePanel.Show(m_rollingPin);
         }
