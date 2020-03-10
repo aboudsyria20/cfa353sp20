@@ -6,14 +6,14 @@ public class ChiefChar : SceneCharacters
 {
     [SerializeField] private DialogueOption m_foundRollingPin;
     [SerializeField] private DialogueOption m_ticket;
-    [SerializeField] private PlayerController m_playerController; 
+    [SerializeField] private PlayerController m_playerController;
     [SerializeField] private DialogueOption m_gameOver;
 
 
     public override void ShowDialogue()
     {
-         
-         if (m_playerController.rollingPinInventory )
+
+         if (m_playerController.rollingPinInInventory )
         {
             m_dialoguePanel.Show(m_gameOver);
         }

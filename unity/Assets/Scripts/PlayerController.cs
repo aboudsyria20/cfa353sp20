@@ -31,9 +31,9 @@ public class PlayerController : MonoBehaviour
 
   [Header("Evidence in Inventory")]
   public bool keyInInventory = false;
-  public bool rollingPinInventory = false;
-  public bool diamondNecklaceInventory = false;
-  public bool jarOfJamInventory = false;
+  public bool rollingPinInInventory = false;
+  public bool diamondNecklaceInInventory = false;
+  public bool jarOfJamInInventory = false;
   public bool footprintsInInventory = false;
   public bool frozenFishInInventory = false;
   public bool butchersKnifeInInventory = false;
@@ -50,6 +50,15 @@ public class PlayerController : MonoBehaviour
 
   [Header("Inventory")]
   public GameObject inventoryPanel;
+  public GameObject inventoryKey;
+  public GameObject inventoryRollingPin;
+  public GameObject inventoryDiamondNecklace;
+  public GameObject inventoryJarOfJam;
+  public GameObject inventoryFootprints;
+  public GameObject inventoryFrozenFish;
+  public GameObject inventoryButchersKnife;
+  public GameObject inventoryDeliTicket;
+  public GameObject inventoryJellyDonut;
   public Text deliTicketText;
   public Text jarOfJamText;
   public Text RollingPinText;
@@ -123,14 +132,33 @@ public class PlayerController : MonoBehaviour
           if(deliTicketInInventory == true)
           {
               deliTicketText.gameObject.SetActive(true);
+              inventoryDeliTicket.gameObject.SetActive(true);
           }
-          if(jarOfJamInventory == true)
+          if(jarOfJamInInventory == true)
           {
               jarOfJamText.gameObject.SetActive(true);
+              inventoryJarOfJam.gameObject.SetActive(true);
           }
-          if(rollingPinInventory == true)
+          if(jellyDonutInInventory == true)
+          {
+              inventoryJellyDonut.gameObject.SetActive(true);
+          }
+          if(frozenFishInInventory == true)
+          {
+              inventoryFrozenFish.gameObject.SetActive(true);
+          }
+          if(rollingPinInInventory == true)
           {
               RollingPinText.gameObject.SetActive(true);
+              inventoryRollingPin.gameObject.SetActive(true);
+          }
+          if(keyInInventory == true)
+          {
+              inventoryKey.gameObject.SetActive(true);
+          }
+          if(diamondNecklaceInInventory == true)
+          {
+              inventoryDiamondNecklace.gameObject.SetActive(true);
           }
           inventoryIsOpen = true;
       }
@@ -187,14 +215,14 @@ public class PlayerController : MonoBehaviour
       if (other.tag == "JamJar" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
-            jarOfJamInventory = true;
+            jarOfJamInInventory = true;
             //dop.mustHavePickedUpJam = true;
             Debug.Log("Picked up Jar of Jam");
       }
 
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
-            rollingPinInventory = true;
+            rollingPinInInventory = true;
             Debug.Log("Picked up Rolling Pin");
         }
     }
