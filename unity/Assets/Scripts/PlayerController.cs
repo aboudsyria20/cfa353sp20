@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
       float vertMove = Input.GetAxisRaw("Vertical");
 
       rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
-      Debug.Log(horiMove);
+      //Debug.Log(horiMove);
 
       anim.SetFloat("Speed", horiMove);
       anim.SetFloat("YSpeed", vertMove);
@@ -178,9 +178,9 @@ public class PlayerController : MonoBehaviour
       else if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == true)
       {
         inventoryPanel.gameObject.SetActive(false);
-        deliTicketText.gameObject.SetActive(false);
-        jarOfJamText.gameObject.SetActive(false);
-        RollingPinText.gameObject.SetActive(false);
+        //deliTicketText.gameObject.SetActive(false);
+        //jarOfJamText.gameObject.SetActive(false);
+        //RollingPinText.gameObject.SetActive(false);
         inventoryIsOpen = false;
       }
 
@@ -214,7 +214,7 @@ public class PlayerController : MonoBehaviour
       }
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay2D(Collider2D other)
     {
       if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
       {
