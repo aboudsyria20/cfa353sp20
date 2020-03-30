@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Oh, okay. Let me know if I can do anything for you.
   m_responses:
-  - Response: Thank you.
+  - Response: Thanks
     Option: {fileID: 0}
-    mustHAvemustHavePickedUpKey: 0
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
     butchCrying: 0
     butchCurious: 1
     butchConvoTwo: 0

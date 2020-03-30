@@ -12,14 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 3
   m_EditorClassIdentifier: 
-  m_dialogue: She seemed super busy. She was on the phone the whole time she was
-    in. She sounded frustrated and left before her order was ready.
+  m_dialogue: She seemed super busy. She was on the phone the whole time. She sounded
+    frustrated and left before her order was ready.
   m_responses:
   - Response: Any idea where she went next?
     Option: {fileID: 11400000, guid: eed03f52fe8fe46caaf7da92d1582f30, type: 2}
-    mustHAvemustHavePickedUpKey: 0
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
@@ -30,9 +32,11 @@ MonoBehaviour:
     mustHavePickedUpTicket: 0
   - Response: Thanks for the infromation. I gotta go.
     Option: {fileID: 11400000, guid: a0b75d57648574bb78d1e20fcbbcdf5f, type: 2}
-    mustHAvemustHavePickedUpKey: 0
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0

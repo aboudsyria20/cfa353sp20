@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: MURDERED!? Oh no! (starts crying)
   m_responses:
-  - Response: Sorry to say so early.
+  - Response: .... I better get going.
     Option: {fileID: 0}
-    mustHAvemustHavePickedUpKey: 0
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
     butchCrying: 1
     butchCurious: 0
     butchConvoTwo: 0

@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 2
   m_EditorClassIdentifier: 
-  m_dialogue: The mayor was just in yesterday around noon.
+  m_dialogue: The mayor was in just yesterday, around noon.
   m_responses:
+  - Response: Was anything off about her?
+    Option: {fileID: 11400000, guid: 9fe4f2abeaa5f4c9cb4ce3bffbfc3454, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
   - Response: Thanks for the infromation. I gotta go.
     Option: {fileID: 11400000, guid: a0b75d57648574bb78d1e20fcbbcdf5f, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
-  - Response: was anything off about her?
-    Option: {fileID: 11400000, guid: 9fe4f2abeaa5f4c9cb4ce3bffbfc3454, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
+    talkedToChief: 0
     mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0

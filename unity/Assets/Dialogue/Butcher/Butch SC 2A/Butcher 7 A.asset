@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: I hope you find what you're looking for.
   m_responses:
-  - Response: I will...
+  - Response: Thank you.
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
-    hadJellyConvo: 0
+    mustHavePickedUpTicket: 0

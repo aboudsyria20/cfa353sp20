@@ -12,19 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 11 B
   m_EditorClassIdentifier: 
-  m_dialogue: Okay, okay. The compartment is where I used to store my frozen fish.
-    For when I couldn't catch enough to meet demands. But I haven't used it since
+  m_dialogue: Okay, okay. The compartment is where I used to store my frozen fish,
+    for when I couldn't catch enough to meet demands. But I haven't used it since
     the police found out about it.
   m_responses:
   - Response: Thanks for the information, but you're not in the clear yet.
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
