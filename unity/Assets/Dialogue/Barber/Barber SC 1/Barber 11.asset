@@ -13,35 +13,35 @@ MonoBehaviour:
   m_Name: Barber 11
   m_EditorClassIdentifier: 
   m_dialogue: Well, there was a little misunderstanding between me and the mayor.
-    That may have ended with a small restraining order.
+    It may have ended in a small restraining order.
   m_responses:
-  - Response: That's it. I'm taking you to the cheif.
-    Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
   - Response: Oh, well that explains it.
     Option: {fileID: 11400000, guid: cac11b65414054691809167e45470d2c, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: That's it! I'm taking you to the cheif.
+    Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

@@ -14,25 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: But what I was doing there is my business.
   m_responses:
-  - Response: You're right. That's none of my business.
-    Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    talkedToChief: 0
-    hadJellyConvo: 0
   - Response: When you become the prime suspect in a murder case, it becomes my business.
     Option: {fileID: 11400000, guid: 32fcc0d58f17849c18cc862ac127ffa1, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: You're right. That's none of my business.
+    Option: {fileID: 0}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

@@ -14,33 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Oh, hi detective. What are you up to?
   m_responses:
-  - Response: Nothing, just passing by.
-    Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
   - Response: Where were you last night?
     Option: {fileID: 11400000, guid: 70095bacad3054734b0a94b1fab51287, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: Nothing, just passing by.
+    Option: {fileID: 0}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

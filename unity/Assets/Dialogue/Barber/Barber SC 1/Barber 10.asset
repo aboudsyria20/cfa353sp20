@@ -14,33 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Not exactly.
   m_responses:
-  - Response: Say no more. I should take you to the chief.
-    Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
   - Response: What does that mean?
     Option: {fileID: 11400000, guid: e0ac4ef960ddf47e0becbfaa400cbedd, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: Say no more. I should take you to the chief.
+    Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
