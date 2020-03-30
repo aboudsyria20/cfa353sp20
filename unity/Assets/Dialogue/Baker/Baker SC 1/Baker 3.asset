@@ -12,50 +12,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 3
   m_EditorClassIdentifier: 
-  m_dialogue: Oh. This? It's nothing. Ha ha. I mean, what stain?
+  m_dialogue: Oh! This? It's nothing. Ha ha. I mean, what stain?
   m_responses:
-  - Response: Never mind. My mistake.
-    Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+  - Response: It looks like jelly.
+    Option: {fileID: 11400000, guid: 6d3328f01818e40f98ee9108a08788bb, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
   - Response: It looks like blood.
     Option: {fileID: 11400000, guid: da97e3352eefb4f3eb844cd0ea71e342, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
-  - Response: It looks like jam.
-    Option: {fileID: 11400000, guid: 6d3328f01818e40f98ee9108a08788bb, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
+    talkedToChief: 0
     mustHavePickedUpTicket: 0
+  - Response: Never mind. My mistake.
+    Option: {fileID: 0}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

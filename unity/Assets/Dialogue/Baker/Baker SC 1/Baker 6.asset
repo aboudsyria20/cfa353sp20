@@ -12,35 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 6
   m_EditorClassIdentifier: 
-  m_dialogue: Well I.... It's umm..... Not..... (deep inhale) It's jam.
+  m_dialogue: Well I.... It's umm..... Not..... (deep inhale) It's jelly.
   m_responses:
   - Response: Aha, I knew it!
     Option: {fileID: 11400000, guid: 86ada03c8090b4724bfa7af6bf77e498, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
-  - Response: I thought you didn't serve jam donuts?
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: I thought you didn't serve jelly donuts?
     Option: {fileID: 11400000, guid: 86ada03c8090b4724bfa7af6bf77e498, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

@@ -13,35 +13,35 @@ MonoBehaviour:
   m_Name: Baker 7
   m_EditorClassIdentifier: 
   m_dialogue: The truth is. We can't sell jelly donuts anymore, because I end up
-    eating all the jam.
+    eating all the jelly.
   m_responses:
   - Response: All of it!?
     Option: {fileID: 11400000, guid: 8fea7155f3d0146fea180cde61dc2983, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
   - Response: Oh my!
     Option: {fileID: 11400000, guid: 8fea7155f3d0146fea180cde61dc2983, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

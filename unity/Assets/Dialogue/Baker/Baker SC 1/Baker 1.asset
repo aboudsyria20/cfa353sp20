@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Hello! Welcome to my bakery!
   m_responses:
-  - Response: I'm just passing by.
-    Option: {fileID: 0}
+  - Response: Hello, Can I get one jelly donut.
+    Option: {fileID: 11400000, guid: 95b22db4bbe394424abab384e8a2e08f, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
@@ -44,8 +44,8 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: Hello. Can I get one jelly donut.
-    Option: {fileID: 11400000, guid: 95b22db4bbe394424abab384e8a2e08f, type: 2}
+  - Response: I'm just passing by.
+    Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0

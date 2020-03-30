@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Baker 18 A
   m_EditorClassIdentifier: 
   m_dialogue: Sometime last week. It was a slow day at the shop. My only customer
-    all day was the Chief Barker. When I was closing up the shop I noticed it was
-    gone.
+    all day was the Chief. When I was closing up the shop I noticed it was gone.
   m_responses:
   - Response: Alright, I'll see if I can find anything else. Don't go anywhere.
     Option: {fileID: 11400000, guid: b80651645792947a59b03f84cfc9956e, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 1
