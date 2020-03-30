@@ -14,29 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Is that a jelly donut I smell?
   m_responses:
+  - Response: It sure is.
+    Option: {fileID: 11400000, guid: 2d6693b345d21914cb2d445013847f80, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 1
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
   - Response: Nope, you must be smelling things.
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
-    mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
-    mustTalkToCharacter: {fileID: 0}
+    hadBarberConvo: 0
     hadJellyConvo: 0
-  - Response: You're darn right it is.
-    Option: {fileID: 11400000, guid: 2d6693b345d21914cb2d445013847f80, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 1
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
