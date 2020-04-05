@@ -10,13 +10,30 @@ public class SceneCharacters : MonoBehaviour
     [SerializeField] protected DialogueOption m_initialOption;
 
     public bool playerTalkedToMe = false;
+    public void Update()
+    {
+        //If space bar is pressed and the dialogue isn't activated already
+        if (Input.GetKeyDown(KeyCode.Space) && m_dialoguePanel.gameObject.activeInHierarchy == false)
+        {
+            //Find player script
+            PlayerController playerController = GameObject.FindObjectOfType<PlayerController>();
+            Transform playerTransform = playerController.gameObject.transform;
+            // Find the distance between player and NPC
+            float distance = Vector3.Distance(playerTransform.position, this.transform.position);
+            float minDsitance = 3.0f;
+            //with in the talking radius
+            if (distance < minDsitance)
+            {
+                Talk();
+            }
+        }
 
-    public void OnMouseDown()
+    }
+    private void Talk()
     {
         playerTalkedToMe = true;
-        
-        m_dialoguePanel.SetCharacter(m_character);
 
+        m_dialoguePanel.SetCharacter(m_character);
         ShowDialogue();
     }
 

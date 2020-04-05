@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
   public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
-  DialogueOption dop;
+ // DialogueOption dop;
 
   [Header("Evidence")]
   public GameObject key;

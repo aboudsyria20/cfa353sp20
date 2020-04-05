@@ -9,7 +9,7 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private Image m_characterImage;
     [SerializeField] private Transform m_buttonParent;
     [SerializeField] private GameObject m_responsePrefab;
-
+    
     [SerializeField] private PlayerController m_playerController;
 
     public PlayerController PlayerController { get { return m_playerController; } }
@@ -36,7 +36,7 @@ public class DialoguePanel : MonoBehaviour
         {
             
             DialogueResponse response = dialogueOption.responses[i];
-           /*if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
+           /*  if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
             {
                 continue; //don't spawn the button
             }*/

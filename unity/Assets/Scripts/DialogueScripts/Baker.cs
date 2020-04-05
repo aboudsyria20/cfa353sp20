@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,6 +28,7 @@ public class Baker : SceneCharacters
         else
         {
             m_dialoguePanel.Show(m_initialOption);
+            m_playerController.jellyDonutInInventory = true;
         }
       }
     }
