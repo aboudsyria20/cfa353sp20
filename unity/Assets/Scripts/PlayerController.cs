@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+[RequireComponent(typeof(AudioSource))]
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
   public Rigidbody2D rb2d;
   public Animator anim;
   private Vector3 playerPosition;
+  private bool canMove = true;
   public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
@@ -41,6 +43,11 @@ public class PlayerController : MonoBehaviour
   public GameObject deliTicket;
   public GameObject jellyDonut;
 
+  [Header("Got Evidence")]
+  public Text gotDeliTicketText;
+  public Text gotJarOfJamText;
+  public Text gotRollingPinText;
+
   [Header("Evidence in Inventory")]
   public bool keyInInventory = false;
   public bool rollingPinInInventory = false;
@@ -56,7 +63,7 @@ public class PlayerController : MonoBehaviour
   private bool canGetJellyDonut = false;
   private bool canGetPawnInformation = false;
   private bool canGetBarberInformation = false;
-  private bool canOpenBoat = false;
+  public bool canOpenBoat = false;
   private bool canDigKey = false;
   private bool canOpenChest = false;
 
@@ -75,6 +82,12 @@ public class PlayerController : MonoBehaviour
   public Text jarOfJamText;
   public Text RollingPinText;
   private bool inventoryIsOpen = false;
+
+  [Header("Sounds")]
+  AudioSource auso;
+  public AudioClip collectEvidence;
+  public AudioClip footsteps;
+  public AudioClip water;
 
   [Header("Win Lose States")]
   public GameObject winScreen;
@@ -104,11 +117,15 @@ public class PlayerController : MonoBehaviour
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
-      rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
+if(canMove == true)
+{
+  rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
+  anim.SetFloat("Speed", horiMove);
+  anim.SetFloat("YSpeed", vertMove);
+}
       //Debug.Log(horiMove);
 
-      anim.SetFloat("Speed", horiMove);
-      anim.SetFloat("YSpeed", vertMove);
+
       //anim.SetFloat("Speed", Mathf.Abs(horiMove));
 
       //Vector3 speedVect = new Vector3(horiMove, vertMove, 0);
@@ -140,6 +157,7 @@ public class PlayerController : MonoBehaviour
     {
       if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false && gameIsPaused == false && isInDialog == false)
       {
+        canMove = false;
         inventoryPanel.gameObject.SetActive(true);
           if(deliTicketInInventory == true)
           {
@@ -182,6 +200,7 @@ public class PlayerController : MonoBehaviour
         //jarOfJamText.gameObject.SetActive(false);
         //RollingPinText.gameObject.SetActive(false);
         inventoryIsOpen = false;
+        canMove = true;
       }
 
     }
@@ -206,12 +225,41 @@ public class PlayerController : MonoBehaviour
       {
         pauseScreen.gameObject.SetActive(true);
         gameIsPaused = true;
+        canMove = false;
       }
       else if(Input.GetKeyDown(KeyCode.P) && gameIsPaused == true)
       {
           pauseScreen.gameObject.SetActive(false);
         gameIsPaused = false;
+        canMove = true;
       }
+    }
+
+    IEnumerator GotDeliTicket()
+    {
+        gotDeliTicketText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(5f);
+
+        gotDeliTicketText.gameObject.SetActive(false);
+    }
+
+    IEnumerator GotJarOfJam()
+    {
+        gotJarOfJamText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(5f);
+
+        gotJarOfJamText.gameObject.SetActive(false);
+    }
+
+    IEnumerator GotRollingPin()
+    {
+        gotRollingPinText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(5f);
+
+        gotRollingPinText.gameObject.SetActive(false);
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -220,6 +268,8 @@ public class PlayerController : MonoBehaviour
       {
             Destroy(other.gameObject);
             deliTicketInInventory = true;
+            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+            StartCoroutine(GotDeliTicket());
             //dop.MustHavePickedUpTicket = true;
             Debug.Log("Picked up Ticket");
       }
@@ -228,6 +278,8 @@ public class PlayerController : MonoBehaviour
       {
             Destroy(other.gameObject);
             jarOfJamInInventory = true;
+            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+            StartCoroutine(GotJarOfJam());
             //dop.mustHavePickedUpJam = true;
             Debug.Log("Picked up Jar of Jam");
       }
@@ -235,6 +287,8 @@ public class PlayerController : MonoBehaviour
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
             rollingPinInInventory = true;
+            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+            StartCoroutine(GotRollingPin());
             Debug.Log("Picked up Rolling Pin");
         }
     }
