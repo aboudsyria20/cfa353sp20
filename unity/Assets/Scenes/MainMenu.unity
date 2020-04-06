@@ -4280,7 +4280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pick up evidence on the ground with E
+  m_text: Pick up evidence on the ground with Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4349,7 +4349,7 @@ MonoBehaviour:
   m_margin: {x: -101.883125, y: 0, z: -62.6973, w: -11.758}
   m_textInfo:
     textComponent: {fileID: 1792952225}
-    characterCount: 37
+    characterCount: 41
     spriteCount: 0
     spaceCount: 7
     wordCount: 8
