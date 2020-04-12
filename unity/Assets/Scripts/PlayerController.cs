@@ -84,7 +84,6 @@ public class PlayerController : MonoBehaviour
   private bool inventoryIsOpen = false;
 
   [Header("Sounds")]
-  AudioSource auso;
   public AudioClip collectEvidence;
   public AudioClip footsteps;
   private float playFootsteps = 0.0f;
@@ -103,6 +102,7 @@ public class PlayerController : MonoBehaviour
   [Header("Screen Checks")]
   private bool isInDialog = false;
 
+
   [SerializeField] private GameObject m_dialoguePanelObject;
 
     // Start is called before the first frame update
@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
 
     public void Footstep()
     {
-      auso.PlayOneShot(footsteps, 0.7F);
+      AudioSource.PlayClipAtPoint(footsteps, transform.position);
     }
 
     // Update is called once per frame
