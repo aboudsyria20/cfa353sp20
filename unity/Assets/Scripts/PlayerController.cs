@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
   AudioSource auso;
   public AudioClip collectEvidence;
   public AudioClip footsteps;
+  private float playFootsteps = 0.0f;
   public AudioClip water;
 
   [Header("Win Lose States")]
@@ -102,6 +103,8 @@ public class PlayerController : MonoBehaviour
   [Header("Screen Checks")]
   private bool isInDialog = false;
 
+  [SerializeField] private GameObject m_dialoguePanelObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -110,6 +113,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void Footstep()
+    {
+      auso.PlayOneShot(footsteps, 0.7F);
+    }
 
     // Update is called once per frame
     void Update()
@@ -117,11 +124,23 @@ public class PlayerController : MonoBehaviour
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
+      if(m_dialoguePanelObject.activeInHierarchy)
+      {
+        return;
+      }
+
 if(canMove == true)
 {
   rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
   anim.SetFloat("Speed", horiMove);
   anim.SetFloat("YSpeed", vertMove);
+  //playFootsteps += Time.deltaTime;
+  //if(playFootsteps < 0.1f)
+  //{
+  //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
+  //   playFootsteps = 0.0f;
+  }
+
 }
       //Debug.Log(horiMove);
 
