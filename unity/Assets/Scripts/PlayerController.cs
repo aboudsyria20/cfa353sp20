@@ -129,19 +129,17 @@ public class PlayerController : MonoBehaviour
         return;
       }
 
-if(canMove == true)
-{
-  rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
-  anim.SetFloat("Speed", horiMove);
-  anim.SetFloat("YSpeed", vertMove);
-  //playFootsteps += Time.deltaTime;
-  //if(playFootsteps < 0.1f)
-  //{
-  //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
-  //   playFootsteps = 0.0f;
-  }
-
-}
+      if(canMove == true)
+      {
+        rb2d.velocity = new Vector2 (horiMove * playerSpeed, vertMove * playerSpeed);
+        anim.SetFloat("Speed", horiMove);
+        anim.SetFloat("YSpeed", vertMove);
+        //playFootsteps += Time.deltaTime;
+        //if(playFootsteps < 0.1f)
+        //{
+        //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
+        //   playFootsteps = 0.0f;
+      }
       //Debug.Log(horiMove);
 
 
