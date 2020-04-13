@@ -9,21 +9,41 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private Image m_characterImage;
     [SerializeField] private Transform m_buttonParent;
     [SerializeField] private GameObject m_responsePrefab;
+    [SerializeField] private float delay = 0.1f;
+
+    public GameObject buttonGroup;
+    string myDialogue = "";
+    
     
     [SerializeField] private PlayerController m_playerController;
+    [SerializeField] private DialogueOption dialogueOption;
 
     public PlayerController PlayerController { get { return m_playerController; } }
+    //public DialogueOption DialogueOption { get { return dialogueOption; } }
+
     public void SetCharacter(Characters character)
     {
         m_characterImage.sprite = character.InterviewSprite;
         m_characterImage.SetNativeSize();
+    }
+    //Typwirter Effect for the dialogue
+    IEnumerator ShowText(string dialogue, float delay)
+    {
+        for (int i = 0; i < dialogue.Length; i++)
+        {
+            buttonGroup.SetActive(false);
+            m_dialogueField.text = dialogue.Substring(0, i);
+            yield return new WaitForSeconds(delay);
+            buttonGroup.SetActive(true);
+        }
     }
 
     public void Show(DialogueOption dialogueOption)
     {
         this.gameObject.SetActive(true);
 
-        m_dialogueField.text = dialogueOption.dialogue;
+        StartCoroutine(ShowText(dialogueOption.dialogue, delay));
+      // m_dialogueField.text = dialogueOption.dialogue;
 
         while (m_buttonParent.childCount > 0)
         {
@@ -36,10 +56,7 @@ public class DialoguePanel : MonoBehaviour
         {
             
             DialogueResponse response = dialogueOption.responses[i];
-           /*  if(response.mustHavePickedUpKey && !m_playerController.keyInInventory)
-            {
-                continue; //don't spawn the button
-            }*/
+          
             if(response.mustHavePickedUpTicket && !m_playerController.deliTicketInInventory)
             {
                 continue;

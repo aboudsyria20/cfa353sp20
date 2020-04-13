@@ -29,16 +29,18 @@ public class SceneCharacters : MonoBehaviour
         }
 
     }
-    private void Talk()
+    public void Talk()
     {
         playerTalkedToMe = true;
 
         m_dialoguePanel.SetCharacter(m_character);
-        ShowDialogue();
+       // StartCoroutine(m_dialoguePanel.ShowText());
+       ShowDialogue();
     }
 
     public virtual void ShowDialogue()
     {
+
         m_dialoguePanel.Show(m_initialOption);
     }
 }
