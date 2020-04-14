@@ -16,10 +16,10 @@ public class AnimToGameplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(animTime > 21)
-        {
-
-        } */
+      if (Input.anyKey)
+      {
+          SceneManager.LoadScene(2);
+      }
     }
 
     IEnumerator GoToGameplay()
