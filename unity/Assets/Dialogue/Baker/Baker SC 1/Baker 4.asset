@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 4
   m_EditorClassIdentifier: 
-  m_dialogue: Jam, oh no. No jam here. No sir.
+  m_dialogue: Jelly, oh no. No jelly here. No sir.
   m_responses:
   - Response: Then is it blood?
     Option: {fileID: 11400000, guid: da97e3352eefb4f3eb844cd0ea71e342, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
