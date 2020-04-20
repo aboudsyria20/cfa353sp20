@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Video;
 
 [CreateAssetMenu(fileName = "DialogueOption", menuName = "ScriptableObjects/DialogueOption")]
 public class DialogueOption : ScriptableObject

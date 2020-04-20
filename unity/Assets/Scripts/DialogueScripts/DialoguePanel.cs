@@ -13,14 +13,27 @@ public class DialoguePanel : MonoBehaviour
 
     public GameObject buttonGroup;
     string myDialogue = "";
-    
-    
+    private DialogueOption m_dialogueOption;
+
+
     [SerializeField] private PlayerController m_playerController;
     [SerializeField] private DialogueOption dialogueOption;
 
     public PlayerController PlayerController { get { return m_playerController; } }
-    //public DialogueOption DialogueOption { get { return dialogueOption; } }
-
+   // public DialogueOption DialogueOption { get { return dialogueOption; } }
+    public void Update()
+    {
+        if (m_dialogueOption != null)
+        {
+            if (Input.anyKeyDown)
+            {
+                StopAllCoroutines();
+                //skip to end
+                m_dialogueField.text = m_dialogueOption.dialogue;
+                buttonGroup.SetActive(true);
+            }
+        }
+    }
     public void SetCharacter(Characters character)
     {
         m_characterImage.sprite = character.InterviewSprite;
@@ -33,6 +46,8 @@ public class DialoguePanel : MonoBehaviour
         {
             buttonGroup.SetActive(false);
             m_dialogueField.text = dialogue.Substring(0, i);
+            string visibleText = dialogue.Substring(0, i);
+            string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
             yield return new WaitForSeconds(delay);
             buttonGroup.SetActive(true);
         }
@@ -40,9 +55,12 @@ public class DialoguePanel : MonoBehaviour
 
     public void Show(DialogueOption dialogueOption)
     {
-        this.gameObject.SetActive(true);
+        m_dialogueOption = dialogueOption;
 
+        this.gameObject.SetActive(true);
+       
         StartCoroutine(ShowText(dialogueOption.dialogue, delay));
+       
       // m_dialogueField.text = dialogueOption.dialogue;
 
         while (m_buttonParent.childCount > 0)
