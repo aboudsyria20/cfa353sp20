@@ -50,6 +50,7 @@ public class DialoguePanel : MonoBehaviour
             //m_dialogueField.text = dialogue.Substring(0, i);
             string visibleText = dialogue.Substring(0, i);
             string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
+            m_dialogueField.text = visibleText + invisibleText;
             yield return new WaitForSeconds(delay);
             buttonGroup.SetActive(true);
         }
