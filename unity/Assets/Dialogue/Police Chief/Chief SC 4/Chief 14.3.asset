@@ -10,13 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Jelly(9)
+  m_Name: Chief 14.3
   m_EditorClassIdentifier: 
-  m_dialogue: Everything has been returned. If you didn't know all that then why
-    are you here in the first place?
+  m_dialogue: ' She was a fool who wanted to cut funding from the police force. She
+    said the town was too peaceful. That we weren''t needed, but I gave her a reason
+    to keep us around.'
   m_responses:
-  - Response: Can't say. I'm on an offcial investigation.
-    Option: {fileID: 11400000, guid: a454035f6f1f61546a1609982195d701, type: 2}
+  - Response: "Not every dog has their day! You\u2019re off to jail!"
+    Option: {fileID: 0}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 1
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: "You\u2019re bad to the bone chief. Enjoy your jail cell!"
+    Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
@@ -30,8 +46,9 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: The mayor was found dead last night. Know anything about it?
-    Option: {fileID: 11400000, guid: f646f2a9342aab2488a5d590e3aae6eb, type: 2}
+  - Response: "It\u2019s a doggone shame. You\u2019ll be spending the rest of your
+      life behind bars!"
+    Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0

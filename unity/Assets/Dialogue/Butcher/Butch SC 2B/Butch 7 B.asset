@@ -12,16 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 7 B
   m_EditorClassIdentifier: 
-  m_dialogue: (uncontrollably crying)
+  m_dialogue: Give me some time to process all this.
   m_responses:
-  - Response: ....
+  - Response: Of course.
     Option: {fileID: 0}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
-    hadJellyConvo: 0
+    mustHavePickedUpTicket: 0

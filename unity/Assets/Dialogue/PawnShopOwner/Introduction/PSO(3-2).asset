@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: PSO(3-2)
   m_EditorClassIdentifier: 
-  m_dialogue: Ha Ha. Sure let me know when the backup gets here little guy.
+  m_dialogue: Ha ha. Sure let me know when the backup gets here little guy.
   m_responses:
   - Response: Come on. There has to be something that'll get you to talk.
     Option: {fileID: 11400000, guid: 0ee7263a77171d04b805995c5e155c00, type: 2}

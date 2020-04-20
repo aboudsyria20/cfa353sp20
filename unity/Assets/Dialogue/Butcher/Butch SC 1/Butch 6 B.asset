@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 6 B
   m_EditorClassIdentifier: 
-  m_dialogue: MURDERED!? Oh no! (starts crying)
+  m_dialogue: MURDERED!? Oh no!
   m_responses:
   - Response: .... I better get going.
     Option: {fileID: 0}
@@ -20,7 +20,7 @@ MonoBehaviour:
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
-    tellNoOne: 0
+    tellNoOne: 1
     butchCrying: 1
     butchCurious: 0
     butchConvoTwo: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 6
   m_EditorClassIdentifier: 
-  m_dialogue: Well I.... It's umm..... Not..... (deep inhale) It's jelly.
+  m_dialogue: Well I.... It's umm..... Not..... It's jelly.
   m_responses:
   - Response: Aha, I knew it!
     Option: {fileID: 11400000, guid: 86ada03c8090b4724bfa7af6bf77e498, type: 2}

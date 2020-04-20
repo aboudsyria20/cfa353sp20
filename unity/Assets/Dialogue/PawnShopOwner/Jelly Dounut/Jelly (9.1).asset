@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief 2
+  m_Name: Jelly (9.1)
   m_EditorClassIdentifier: 
-  m_dialogue: "Mayor Jane Doe was murdered last night. The criminal couldn\u2019t
-    have gotten far and is likely still in Creektown. "
+  m_dialogue: 'Hey! It was all figured out. She came in. We talked about it, and
+    we came to an understanding. '
   m_responses:
-  - Response: Alright.
-    Option: {fileID: 11400000, guid: de5a23a0d9ab949e08178a1ef46dc1f5, type: 2}
+  - Response: What's youre point?
+    Option: {fileID: 11400000, guid: 50cff197a5230f842a497b14d967985f, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
@@ -28,5 +28,5 @@ MonoBehaviour:
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    talkedToChief: 1
+    talkedToChief: 0
     mustHavePickedUpTicket: 0

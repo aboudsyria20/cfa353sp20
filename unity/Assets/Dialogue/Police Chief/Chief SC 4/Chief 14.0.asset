@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief 2
+  m_Name: Chief 14.0
   m_EditorClassIdentifier: 
-  m_dialogue: "Mayor Jane Doe was murdered last night. The criminal couldn\u2019t
-    have gotten far and is likely still in Creektown. "
+  m_dialogue: Detective! That's an outrageous accusation! How would... I would never...
   m_responses:
-  - Response: Alright.
-    Option: {fileID: 11400000, guid: de5a23a0d9ab949e08178a1ef46dc1f5, type: 2}
+  - Response: Drop the act Chief!
+    Option: {fileID: 11400000, guid: 84300ccb17e8a46b395647bf2c79a28c, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
@@ -25,8 +24,8 @@ MonoBehaviour:
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
-    playerWin: 0
+    playerWin: 1
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    talkedToChief: 1
+    talkedToChief: 0
     mustHavePickedUpTicket: 0
