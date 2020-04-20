@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ChiefChar : SceneCharacters
 {
     [SerializeField] private DialogueOption m_foundRollingPin;

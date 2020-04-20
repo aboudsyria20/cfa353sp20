@@ -44,7 +44,7 @@ public class Response : MonoBehaviour
         else
         {
             m_dialoguePanel.Show(m_response.Option);
-            // better way to do this, ask Matt for advice
+            
             //Jelly dounut conversation
             if (m_response.hadJellyConvo == true)
             {

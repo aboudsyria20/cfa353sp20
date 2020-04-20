@@ -32,7 +32,7 @@ MonoBehaviour:
   - Response: I've heard enough.
     Option: {fileID: 11400000, guid: a67acf790bb0147158029857a8c505dc, type: 2}
     hadBarberConvo: 0
-    hadJellyConvo: 0
+    hadJellyConvo: 1
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
     tellNoOne: 0

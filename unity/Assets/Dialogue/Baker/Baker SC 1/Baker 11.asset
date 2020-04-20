@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 11
   m_EditorClassIdentifier: 
-  m_dialogue: Yes, I have one left. I was saving it for later, but you have convinced
-    me to quit. Please take it. It's on the house.
+  m_dialogue: Yes, I just need the jar of jam I left in the forest.
   m_responses:
-  - Response: Thank you.
+  - Response: Okay, I'll be back.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0

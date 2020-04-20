@@ -46,7 +46,7 @@ MonoBehaviour:
     talkedToChief: 0
     mustHavePickedUpTicket: 0
   - Response: You were at the bakery when the rolling pin went missing, and knew
-      were the butcher's secret compartment was.
+      where the butcher's secret compartment was.
     Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0

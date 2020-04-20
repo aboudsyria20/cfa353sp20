@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: PSO(End(Intro))
   m_EditorClassIdentifier: 
-  m_dialogue: Nope nothing. (stomach gurgles) I wouldn't say no to a jelly dounut.
+  m_dialogue: Nope nothing. I wouldn't say no to a jelly dounut.
   m_responses:
   - Response: Fine. I'll be back soon.
     Option: {fileID: 0}

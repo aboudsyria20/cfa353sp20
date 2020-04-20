@@ -8,8 +8,7 @@ public class WinVideo : MonoBehaviour
 {
     public RawImage rawImage;
     public VideoPlayer videoPlayer;
-  //  public AudioSource audioSource;
-    // Use this for initialization
+ 
     void Start()
     {
         StartCoroutine(PlayVideo());
@@ -25,6 +24,6 @@ public class WinVideo : MonoBehaviour
         }
         rawImage.texture = videoPlayer.texture;
         videoPlayer.Play();
-       // audioSource.Play();
+       
     }
 }

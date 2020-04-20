@@ -12,31 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Jelly(8)
   m_EditorClassIdentifier: 
-  m_dialogue: There were some rumors going around. That claimed that some of the
-    items I sell at this fine establishment may or may not have been borrowed from
-    individuals, without their knowledge.
+  m_dialogue: There were some rumors going around that claimed that some of the items
+    I sell at this fine establishment may or may not have been borrowed from individuals,
+    without their knowledge.
   m_responses:
   - Response: Where would someone get a wild idea like that?
-    Option: {fileID: 11400000, guid: 50cff197a5230f842a497b14d967985f, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    Option: {fileID: 11400000, guid: 69de3e10e29fc4bc0b3be27567e946e8, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-  - Response: So you're a theif?
-    Option: {fileID: 11400000, guid: 50cff197a5230f842a497b14d967985f, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
+    talkedToChief: 0
     mustHavePickedUpTicket: 0
+  - Response: So you're a thief?
+    Option: {fileID: 11400000, guid: 69de3e10e29fc4bc0b3be27567e946e8, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
     mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

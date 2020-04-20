@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Baker
   m_EditorClassIdentifier: 
   m_name: Backer
-  m_interviewSprite: {fileID: 21300000, guid: 1ad92beca8029b847a95be0e388787a9, type: 3}
+  animatorController: {fileID: 9100000, guid: 97baec4a3b5601f45ad4a0dd6880be47, type: 2}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Barber 9 B
   m_EditorClassIdentifier: 
-  m_dialogue: I got scared. I wasn't technically sopposed to be there.
+  m_dialogue: I got scared. I wasn't technically supposed to be there.
   m_responses:
-  - Response: What do you mean by, you weren't sopposed to be there?
+  - Response: What do you mean by, you weren't supposed to be there?
     Option: {fileID: 11400000, guid: e0ac4ef960ddf47e0becbfaa400cbedd, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0

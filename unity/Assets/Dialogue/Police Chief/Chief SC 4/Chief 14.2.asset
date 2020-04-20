@@ -10,17 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
-  m_Name: Chief 14
+  m_Name: Chief 14.2
   m_EditorClassIdentifier: 
-  m_dialogue: Detective! That's an outrageous accusation! How would... I would never...
-    So you figured it out. No point in trying to deny it any longer. I know when
-    I'm beaten. I underestimated you. It's true. I killed the mayor. She was a fool
-    who wanted to cut funding for the police force. She said the town was too peaceful.
-    That we weren't needed, but I gave her a reason to keep us around. Good job detective,
-    you've solved the caper.
+  m_dialogue: ' I underestimated you. It''s true. I killed the mayor.'
   m_responses:
-  - Response: 
-    Option: {fileID: 0}
+  - Response: Why'd you do it?
+    Option: {fileID: 11400000, guid: 014855afcb3eb432f99adfd0415c9cc1, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
@@ -29,7 +24,7 @@ MonoBehaviour:
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
-    playerWin: 1
+    playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0

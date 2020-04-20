@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Butcher
   m_EditorClassIdentifier: 
   m_name: Butcher Bunny
-  m_interviewSprite: {fileID: 21300000, guid: 6e4aacb10cc33654796b16f61fbe9bb5, type: 3}
+  animatorController: {fileID: 9100000, guid: e056dcde7d7a3a348bf9568ec3e6aff7, type: 2}

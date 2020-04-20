@@ -14,10 +14,11 @@ public class DialoguePanel : MonoBehaviour
     public GameObject buttonGroup;
     string myDialogue = "";
     private DialogueOption m_dialogueOption;
+    public Animator animator;
 
 
     [SerializeField] private PlayerController m_playerController;
-    [SerializeField] private DialogueOption dialogueOption;
+    //[SerializeField] private DialogueOption dialogueOption;
 
     public PlayerController PlayerController { get { return m_playerController; } }
    // public DialogueOption DialogueOption { get { return dialogueOption; } }
@@ -36,7 +37,8 @@ public class DialoguePanel : MonoBehaviour
     }
     public void SetCharacter(Characters character)
     {
-        m_characterImage.sprite = character.InterviewSprite;
+        // m_characterImage.sprite = character.InterviewSprite;
+        animator.runtimeAnimatorController = character.animatorController;
         m_characterImage.SetNativeSize();
     }
     //Typwirter Effect for the dialogue
@@ -45,7 +47,7 @@ public class DialoguePanel : MonoBehaviour
         for (int i = 0; i < dialogue.Length; i++)
         {
             buttonGroup.SetActive(false);
-            m_dialogueField.text = dialogue.Substring(0, i);
+            //m_dialogueField.text = dialogue.Substring(0, i);
             string visibleText = dialogue.Substring(0, i);
             string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
             yield return new WaitForSeconds(delay);

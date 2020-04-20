@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: PoliceCheifCharacter
   m_EditorClassIdentifier: 
   m_name: Police Cheif
-  m_interviewSprite: {fileID: 21300000, guid: eb9af6d800020e045a3d1162b4036186, type: 3}
+  m_interviewSprite: {fileID: 21300000, guid: 9fe0075da6a7e944e8dabc86ceaefd79, type: 3}
+  animatorController: {fileID: 9100000, guid: 5a7cfad5ee4d62d4fa8c68044c180eea, type: 2}

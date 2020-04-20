@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Jelly(9)
   m_EditorClassIdentifier: 
-  m_dialogue: Hey hey hey. It was all figured out. She came in. We talked about it,
-    and we came to an understanding. Everything has been returned. If you didn't
-    know all that then why are you here in the first place?
+  m_dialogue: Everything has been returned. If you didn't know all that then why
+    are you here in the first place?
   m_responses:
   - Response: Can't say. I'm on an offcial investigation.
     Option: {fileID: 11400000, guid: a454035f6f1f61546a1609982195d701, type: 2}

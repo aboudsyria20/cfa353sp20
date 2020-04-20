@@ -24,6 +24,7 @@ public class DialogueResponse
     public string Response;
     public DialogueOption Option;
 
+   
     //public bool mustHavemustHavePickedUpKey;
     //Barbetr Dialogue
     public bool hadBarberConvo;
