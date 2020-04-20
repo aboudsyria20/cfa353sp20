@@ -12,36 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 8
   m_EditorClassIdentifier: 
-  m_dialogue: Yes it's true. I'm an addict. I have great shame in myself, but I can't 
-    stop.
+  m_dialogue: Yes, it's true. I'm an addict. I have great shame in myself, but I
+    can't stop.
   m_responses:
   - Response: You should get help.
     Option: {fileID: 11400000, guid: d6be181aa37934610805d9bfd76c3d2d, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
   - Response: You sicken me.
     Option: {fileID: 11400000, guid: d6be181aa37934610805d9bfd76c3d2d, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    canDigKey: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

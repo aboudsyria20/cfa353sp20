@@ -30,7 +30,7 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: That's it! I'm taking you to the cheif.
+  - Response: That's it! I'm taking you to the chief.
     Option: {fileID: 11400000, guid: 99dec572639dd4b91a3550076503af1d, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
