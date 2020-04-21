@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
   public GameObject jellyDonut;
 
   [Header("Got Evidence")]
+  public GameObject moleUI;
   public Text gotDeliTicketText;
   public Text gotJarOfJamText;
   public Text gotRollingPinText;
@@ -255,28 +256,34 @@ public class PlayerController : MonoBehaviour
     IEnumerator GotDeliTicket()
     {
         gotDeliTicketText.gameObject.SetActive(true);
+        moleUI.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(5f);
 
         gotDeliTicketText.gameObject.SetActive(false);
+        moleUI.gameObject.SetActive(false);
     }
 
     IEnumerator GotJarOfJam()
     {
         gotJarOfJamText.gameObject.SetActive(true);
+        moleUI.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(5f);
 
         gotJarOfJamText.gameObject.SetActive(false);
+        moleUI.gameObject.SetActive(false);
     }
 
     IEnumerator GotRollingPin()
     {
         gotRollingPinText.gameObject.SetActive(true);
+        moleUI.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(5f);
 
         gotRollingPinText.gameObject.SetActive(false);
+        moleUI.gameObject.SetActive(false);
     }
 
     void OnTriggerStay2D(Collider2D other)
