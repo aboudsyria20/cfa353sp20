@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
+  m_Name: Baker 11.1
+  m_EditorClassIdentifier: 
+  m_dialogue: Do you have the jar of jelly?
+  m_responses:
+  - Response: Got it right here.
+    Option: {fileID: 11400000, guid: 61522016786d94917841cdc877142a58, type: 2}
+    hadBarberConvo: 0
+    hadJellyConvo: 1
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+  - Response: Not yet.
+    Option: {fileID: 0}
+    hadBarberConvo: 0
+    hadJellyConvo: 0
+    mustHaveJellyDonut: 0
+    hadBakerRollingPinConvo: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
+    playerWin: 0
+    playerLose: 0
+    mustTalkToCharacter: {fileID: 0}
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0

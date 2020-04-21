@@ -23,7 +23,7 @@ MonoBehaviour:
     hadBakerRollingPinConvo: 0
     tellNoOne: 0
     butchCrying: 0
-    butchCurious: 0
+    butchCurious: 1
     butchConvoTwo: 0
     playerWin: 0
     playerLose: 0

@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: Chief 2
   m_EditorClassIdentifier: 
   m_dialogue: "Mayor Jane Doe was murdered last night. The criminal couldn\u2019t
-    have gotten far and is likely still in Creektown. We\u2019ve sealed off the only
-    exit leading out of town. You\u2019re on the Case, Mason. Go search the crime
-    scene and see if you can find any clues."
+    have gotten far and is likely still in Creektown. "
   m_responses:
-  - Response: I'm on it.
-    Option: {fileID: 0}
+  - Response: Alright.
+    Option: {fileID: 11400000, guid: de5a23a0d9ab949e08178a1ef46dc1f5, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0

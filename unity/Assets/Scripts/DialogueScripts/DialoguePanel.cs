@@ -13,17 +13,32 @@ public class DialoguePanel : MonoBehaviour
 
     public GameObject buttonGroup;
     string myDialogue = "";
-    
-    
+    private DialogueOption m_dialogueOption;
+    public Animator animator;
+
+
     [SerializeField] private PlayerController m_playerController;
-    [SerializeField] private DialogueOption dialogueOption;
+    //[SerializeField] private DialogueOption dialogueOption;
 
     public PlayerController PlayerController { get { return m_playerController; } }
-    //public DialogueOption DialogueOption { get { return dialogueOption; } }
-
+   // public DialogueOption DialogueOption { get { return dialogueOption; } }
+    public void Update()
+    {
+        if (m_dialogueOption != null)
+        {
+            if (Input.anyKeyDown)
+            {
+                StopAllCoroutines();
+                //skip to end
+                m_dialogueField.text = m_dialogueOption.dialogue;
+                buttonGroup.SetActive(true);
+            }
+        }
+    }
     public void SetCharacter(Characters character)
     {
-        m_characterImage.sprite = character.InterviewSprite;
+        // m_characterImage.sprite = character.InterviewSprite;
+        animator.runtimeAnimatorController = character.animatorController;
         m_characterImage.SetNativeSize();
     }
     //Typwirter Effect for the dialogue
@@ -32,7 +47,10 @@ public class DialoguePanel : MonoBehaviour
         for (int i = 0; i < dialogue.Length; i++)
         {
             buttonGroup.SetActive(false);
-            m_dialogueField.text = dialogue.Substring(0, i);
+            //m_dialogueField.text = dialogue.Substring(0, i);
+            string visibleText = dialogue.Substring(0, i);
+            string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
+            m_dialogueField.text = visibleText + invisibleText;
             yield return new WaitForSeconds(delay);
             buttonGroup.SetActive(true);
         }
@@ -40,9 +58,12 @@ public class DialoguePanel : MonoBehaviour
 
     public void Show(DialogueOption dialogueOption)
     {
-        this.gameObject.SetActive(true);
+        m_dialogueOption = dialogueOption;
 
+        this.gameObject.SetActive(true);
+       
         StartCoroutine(ShowText(dialogueOption.dialogue, delay));
+       
       // m_dialogueField.text = dialogueOption.dialogue;
 
         while (m_buttonParent.childCount > 0)

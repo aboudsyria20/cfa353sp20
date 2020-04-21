@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Barber
   m_EditorClassIdentifier: 
   m_name: Barber
-  m_interviewSprite: {fileID: 21300000, guid: ab3b8ce8dd082964885c355591d285dd, type: 3}
+  animatorController: {fileID: 9100000, guid: 9e8451cceebc17e468e84b7367b56e0e, type: 2}

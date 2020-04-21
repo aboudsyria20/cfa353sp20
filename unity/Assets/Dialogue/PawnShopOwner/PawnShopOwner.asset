@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PawnShopOwner
   m_EditorClassIdentifier: 
   m_name: PawnShopOwner
-  m_interviewSprite: {fileID: 21300000, guid: 5b0bd8287404b7548bbfd8e375392c9d, type: 3}
+  animatorController: {fileID: 9100000, guid: 78ae56bc42e4c72408f571f7a02ddaa6, type: 2}
