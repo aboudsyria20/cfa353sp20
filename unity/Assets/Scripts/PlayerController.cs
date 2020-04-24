@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
   public Rigidbody2D rb2d;
   public Animator anim;
   private Vector3 playerPosition;
-  private bool canMove = true;
+  public bool canMove = true;
   public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
@@ -122,6 +122,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(m_dialoguePanelObject.active == true)
+        {
+            canMove = false;
+        } else
+        {
+            canMove = true;
+        }
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
@@ -141,6 +148,14 @@ public class PlayerController : MonoBehaviour
         //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
         //   playFootsteps = 0.0f;
       }
+      if (canMove == false)
+        {
+            Debug.Log("YES I AM BEING CALLED HERE");
+            playerSpeed -= 10f;
+            horiMove = 0f;
+            vertMove = 0f;
+            //rb2d.velocity = 0f;
+        }
       //Debug.Log(horiMove);
 
 
@@ -286,7 +301,7 @@ public class PlayerController : MonoBehaviour
         moleUI.gameObject.SetActive(false);
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
       if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
       {
@@ -310,6 +325,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
+            Destroy(other.gameObject);
             rollingPinInInventory = true;
             AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
             StartCoroutine(GotRollingPin());

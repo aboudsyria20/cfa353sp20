@@ -18,7 +18,7 @@ MonoBehaviour:
   - Response: Why the barber?
     Option: {fileID: 11400000, guid: 26ce432082d16544a87c5a400356c2fa, type: 2}
     hadBarberConvo: 0
-    hadJellyConvo: 0
+    hadJellyConvo: 1
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
     tellNoOne: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
   - Response: Thanks I will.
     Option: {fileID: 0}
     hadBarberConvo: 0
-    hadJellyConvo: 0
+    hadJellyConvo: 1
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
     tellNoOne: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   - Response: It sure is.
     Option: {fileID: 11400000, guid: 2d6693b345d21914cb2d445013847f80, type: 2}
     hadBarberConvo: 0
-    hadJellyConvo: 1
+    hadJellyConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
     tellNoOne: 0
