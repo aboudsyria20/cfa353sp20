@@ -183,7 +183,7 @@ public class PlayerController : MonoBehaviour
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
         //}
         HandleTriggers();
-        Inventory();
+        //Inventory();
         winLoseStates();
         PauseGame();
 
@@ -194,9 +194,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Inventory()
+    /* public void Inventory()
     {
-      if(Input.GetKeyDown(KeyCode.I) /* && inventoryIsOpen == false */ && gameIsPaused == false && isInDialog == false)
+      if(Input.GetKeyDown(KeyCode.I)  && inventoryIsOpen == false && gameIsPaused == false && isInDialog == false)
       {
         canMove = false;
         inventoryPanel.gameObject.SetActive(true);
@@ -244,7 +244,7 @@ public class PlayerController : MonoBehaviour
         canMove = true;
       }
 
-    }
+    } */
 
     public void winLoseStates()
     {
