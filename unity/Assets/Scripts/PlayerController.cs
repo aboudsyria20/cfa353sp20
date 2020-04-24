@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
   public Rigidbody2D rb2d;
   public Animator anim;
   private Vector3 playerPosition;
-  public bool canMove = true;
+  private bool canMove = true;
   public float playerSpeed = 10;
 
   [Header("Get Other Scripts")]
@@ -45,6 +45,9 @@ public class PlayerController : MonoBehaviour
 
   [Header("Got Evidence")]
   public GameObject moleUI;
+  public GameObject glow1;
+  public GameObject glow2;
+  public GameObject glow3;
   public Text gotDeliTicketText;
   public Text gotJarOfJamText;
   public Text gotRollingPinText;
@@ -122,19 +125,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(m_dialoguePanelObject.active == true)
-        {
-            canMove = false;
-        } else
-        {
-            canMove = true;
-        }
+
+      if(jellyDonutInInventory)
+      {
+        inventoryJellyDonut.SetActive(true);
+      }
+      else
+      {
+        inventoryJellyDonut.SetActive(false);
+      }
+
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
       if(m_dialoguePanelObject.activeInHierarchy)
       {
         return;
+        rb2d.velocity = new Vector2 (0, 0);
       }
 
       if(canMove == true)
@@ -148,14 +155,6 @@ public class PlayerController : MonoBehaviour
         //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
         //   playFootsteps = 0.0f;
       }
-      if (canMove == false)
-        {
-            Debug.Log("YES I AM BEING CALLED HERE");
-            playerSpeed -= 10f;
-            horiMove = 0f;
-            vertMove = 0f;
-            //rb2d.velocity = 0f;
-        }
       //Debug.Log(horiMove);
 
 
@@ -188,7 +187,7 @@ public class PlayerController : MonoBehaviour
 
     public void Inventory()
     {
-      if(Input.GetKeyDown(KeyCode.I) && inventoryIsOpen == false && gameIsPaused == false && isInDialog == false)
+      if(Input.GetKeyDown(KeyCode.I) /* && inventoryIsOpen == false */ && gameIsPaused == false && isInDialog == false)
       {
         canMove = false;
         inventoryPanel.gameObject.SetActive(true);
@@ -301,35 +300,38 @@ public class PlayerController : MonoBehaviour
         moleUI.gameObject.SetActive(false);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
       if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
+            glow1.gameObject.SetActive(false);
+            inventoryDeliTicket.gameObject.SetActive(true);
             deliTicketInInventory = true;
             AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
             StartCoroutine(GotDeliTicket());
             //dop.MustHavePickedUpTicket = true;
-            Debug.Log("Picked up Ticket");
+            //Debug.Log("Picked up Ticket");
       }
 
       if (other.tag == "JamJar" && Input.GetKeyDown(KeyCode.Space))
       {
             Destroy(other.gameObject);
+            glow2.gameObject.SetActive(false);
+            inventoryJarOfJam.gameObject.SetActive(true);
             jarOfJamInInventory = true;
             AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
             StartCoroutine(GotJarOfJam());
             //dop.mustHavePickedUpJam = true;
-            Debug.Log("Picked up Jar of Jam");
+            //Debug.Log("Picked up Jar of Jam");
       }
 
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
-            Destroy(other.gameObject);
             rollingPinInInventory = true;
             AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
             StartCoroutine(GotRollingPin());
-            Debug.Log("Picked up Rolling Pin");
+            //Debug.Log("Picked up Rolling Pin");
         }
     }
 }

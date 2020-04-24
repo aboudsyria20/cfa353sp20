@@ -25,6 +25,11 @@ public class Response : MonoBehaviour
 
     private void OnClick()
     {
+        if(m_response.givesJellyDonut)
+        {
+            m_pc.jellyDonutInInventory = false;
+        }
+        
         if (m_response.Option == null)
         {
             m_dialoguePanel.Hide();
