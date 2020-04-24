@@ -328,6 +328,7 @@ public class PlayerController : MonoBehaviour
 
         if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
         {
+            Destroy(other.gameObject);
             rollingPinInInventory = true;
             AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
             StartCoroutine(GotRollingPin());
