@@ -47,6 +47,7 @@ public class DialogueResponse
     public bool talkedToChief;
     public bool mustHavePickedUpTicket;
     public bool givesJellyDonut;
+    public bool willOpenBoat;
    
 
 }
