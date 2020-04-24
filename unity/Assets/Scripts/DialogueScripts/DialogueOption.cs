@@ -46,6 +46,7 @@ public class DialogueResponse
     //Police Cheif 
     public bool talkedToChief;
     public bool mustHavePickedUpTicket;
+    public bool givesJellyDonut;
    
 
 }

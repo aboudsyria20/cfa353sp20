@@ -125,6 +125,16 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+      if(jellyDonutInInventory)
+      {
+        inventoryJellyDonut.SetActive(true);
+      }
+      else
+      {
+        inventoryJellyDonut.SetActive(false);
+      }
+
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
