@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
   private bool canMove = true;
   public float playerSpeed = 10;
 
-  [Header("Get Other Scripts")]
+  //[Header("Get Other Scripts")]
  // DialogueOption dop;
 
   [Header("Evidence")]
@@ -135,13 +135,22 @@ public class PlayerController : MonoBehaviour
         inventoryJellyDonut.SetActive(false);
       }
 
+      if(canOpenBoat && !rollingPinInInventory)
+      {
+        rollingPin.gameObject.SetActive(true);
+      }
+      else
+      {
+        rollingPin.gameObject.SetActive(false);
+      }
+
       float horiMove = Input.GetAxisRaw("Horizontal");
       float vertMove = Input.GetAxisRaw("Vertical");
 
       if(m_dialoguePanelObject.activeInHierarchy)
       {
-        return;
         rb2d.velocity = new Vector2 (0, 0);
+        return;
       }
 
       if(canMove == true)
@@ -173,8 +182,8 @@ public class PlayerController : MonoBehaviour
         //{
         //  rb.velocity = new Vector3 (0, playerSpeed, 0);
         //}
-
-        Inventory();
+        HandleTriggers();
+        //Inventory();
         winLoseStates();
         PauseGame();
 
@@ -185,9 +194,9 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public void Inventory()
+    /* public void Inventory()
     {
-      if(Input.GetKeyDown(KeyCode.I) /* && inventoryIsOpen == false */ && gameIsPaused == false && isInDialog == false)
+      if(Input.GetKeyDown(KeyCode.I)  && inventoryIsOpen == false && gameIsPaused == false && isInDialog == false)
       {
         canMove = false;
         inventoryPanel.gameObject.SetActive(true);
@@ -235,7 +244,7 @@ public class PlayerController : MonoBehaviour
         canMove = true;
       }
 
-    }
+    } */
 
     public void winLoseStates()
     {
@@ -300,39 +309,62 @@ public class PlayerController : MonoBehaviour
         moleUI.gameObject.SetActive(false);
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    List<GameObject>enteredColliderObjects = new List<GameObject>();
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-      if (other.tag == "Cleaver" && Input.GetKeyDown(KeyCode.Space))
-      {
-            Destroy(other.gameObject);
-            glow1.gameObject.SetActive(false);
-            inventoryDeliTicket.gameObject.SetActive(true);
-            deliTicketInInventory = true;
-            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
-            StartCoroutine(GotDeliTicket());
-            //dop.MustHavePickedUpTicket = true;
-            //Debug.Log("Picked up Ticket");
-      }
+      enteredColliderObjects.Add(other.gameObject);
+    }
 
-      if (other.tag == "JamJar" && Input.GetKeyDown(KeyCode.Space))
-      {
-            Destroy(other.gameObject);
-            glow2.gameObject.SetActive(false);
-            inventoryJarOfJam.gameObject.SetActive(true);
-            jarOfJamInInventory = true;
-            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
-            StartCoroutine(GotJarOfJam());
-            //dop.mustHavePickedUpJam = true;
-            //Debug.Log("Picked up Jar of Jam");
-      }
+    void OnTriggerExit2D(Collider2D other)
+    {
+      enteredColliderObjects.Remove(other.gameObject);
+    }
 
-        if (other.tag == "Boat" && canOpenBoat == true && Input.GetKeyDown(KeyCode.Space))
+    void HandleTriggers()
+    {
+      if(Input.GetKeyDown(KeyCode.Space))
+      {
+        for(int i=0; i<enteredColliderObjects.Count; i++)
         {
-            Destroy(other.gameObject);
-            rollingPinInInventory = true;
-            AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
-            StartCoroutine(GotRollingPin());
-            //Debug.Log("Picked up Rolling Pin");
+          GameObject other = enteredColliderObjects[i];
+          Debug.Log(other.gameObject);
+          if (other.tag == "Cleaver")
+          {
+                Destroy(other.gameObject);
+                glow1.gameObject.SetActive(false);
+                inventoryDeliTicket.gameObject.SetActive(true);
+                deliTicketInInventory = true;
+                AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+                StartCoroutine(GotDeliTicket());
+                //dop.MustHavePickedUpTicket = true;
+                //Debug.Log("Picked up Ticket");
+                enteredColliderObjects.Remove(other);
+          }
+
+          if (other.tag == "JamJar")
+          {
+                Destroy(other.gameObject);
+                glow2.gameObject.SetActive(false);
+                inventoryJarOfJam.gameObject.SetActive(true);
+                jarOfJamInInventory = true;
+                AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+                StartCoroutine(GotJarOfJam());
+                //dop.mustHavePickedUpJam = true;
+                //Debug.Log("Picked up Jar of Jam");
+                enteredColliderObjects.Remove(other);
+          }
+
+          if (other.tag == "Boat" && canOpenBoat == true)
+          {
+              rollingPinInInventory = true;
+              other.gameObject.SetActive(false);
+              AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
+              StartCoroutine(GotRollingPin());
+              //Debug.Log("Picked up Rolling Pin");
+              enteredColliderObjects.Remove(other);
+          }
         }
+      }
     }
 }

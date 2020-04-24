@@ -27,9 +27,14 @@ public class Response : MonoBehaviour
     {
         if(m_response.givesJellyDonut)
         {
-            m_pc.jellyDonutInInventory = false;
+            m_dialoguePanel.PlayerController.jellyDonutInInventory = false;
         }
-        
+
+        if(m_response.willOpenBoat)
+        {
+            m_dialoguePanel.PlayerController.canOpenBoat = true;
+        }
+
         if (m_response.Option == null)
         {
             m_dialoguePanel.Hide();

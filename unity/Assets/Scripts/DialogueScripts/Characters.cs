@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor.Animations;
+
 
 [CreateAssetMenu(fileName = "Character", menuName = "ScriptableObjects/Character")]
 public class Characters : ScriptableObject
@@ -15,6 +14,6 @@ public class Characters : ScriptableObject
 
     //[SerializeField] private AnimationClip m_animator;
     // public AnimationClip Animator { get { return m_animator; } }
-    public AnimatorController animatorController;
+    public RuntimeAnimatorController animatorController;
 
 }

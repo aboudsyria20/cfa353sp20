@@ -10,6 +10,7 @@ public class SceneCharacters : MonoBehaviour
     [SerializeField] protected DialogueOption m_initialOption;
 
     public bool playerTalkedToMe = false;
+
     public void Update()
     {
         //If space bar is pressed and the dialogue isn't activated already
