@@ -30,9 +30,11 @@ public class DialogueResponse
     public bool hadBarberConvo;
     //Pawn Shop Owner 
     public bool hadJellyConvo = false;
+    public bool hadPSOInitialConvo = false;
     public bool mustHaveJellyDonut;
     // Baker Dialogue
     public bool hadBakerRollingPinConvo;
+    public bool hadInitialDialogue;
     public bool tellNoOne;
     // Butcher Dialogue
     public bool butchCrying;

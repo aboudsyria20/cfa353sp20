@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     // pawn shop owner dialogue
    public bool hadDonutConvo = false;
+    public bool psoInitalConvo;
     // cheif dialogue
     public bool talkedToChief = false;
     // butcher dialogue
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public bool hadButchConvoTwo = false;
     //Baker dialogue
     public bool tellNoOne;
+    public bool hadInitialDialogue;
     public bool hadRollingPinConvo;
     //Barber convo
     public bool hadBarberConvo;
@@ -150,7 +152,11 @@ public class PlayerController : MonoBehaviour
       if(m_dialoguePanelObject.activeInHierarchy)
       {
         rb2d.velocity = new Vector2 (0, 0);
-        return;
+            anim.SetFloat("Speed", 0);
+            anim.SetFloat("YSpeed", 0);
+            // set animation speed to 0 
+
+            return;
       }
 
       if(canMove == true)
@@ -164,6 +170,7 @@ public class PlayerController : MonoBehaviour
         //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
         //   playFootsteps = 0.0f;
       }
+      
       //Debug.Log(horiMove);
 
 

@@ -15,6 +15,8 @@ public class DialoguePanel : MonoBehaviour
     string myDialogue = "";
     private DialogueOption m_dialogueOption;
     public Animator animator;
+    public AudioSource audioSC;
+    public AudioSource m_buttonAudio;
 
 
     [SerializeField] private PlayerController m_playerController;
@@ -29,6 +31,7 @@ public class DialoguePanel : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 StopAllCoroutines();
+                audioSC.Stop();
                 //skip to end
                 m_dialogueField.text = m_dialogueOption.dialogue;
                 buttonGroup.SetActive(true);
@@ -44,9 +47,12 @@ public class DialoguePanel : MonoBehaviour
     //Typwirter Effect for the dialogue
     IEnumerator ShowText(string dialogue, float delay)
     {
+        audioSC.Play();
         for (int i = 0; i < dialogue.Length; i++)
         {
+           
             buttonGroup.SetActive(false);
+           
             //m_dialogueField.text = dialogue.Substring(0, i);
             string visibleText = dialogue.Substring(0, i);
             string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
@@ -54,6 +60,7 @@ public class DialoguePanel : MonoBehaviour
             yield return new WaitForSeconds(delay);
             buttonGroup.SetActive(true);
         }
+        audioSC.Stop();
     }
 
     public void Show(DialogueOption dialogueOption)
@@ -63,8 +70,6 @@ public class DialoguePanel : MonoBehaviour
         this.gameObject.SetActive(true);
        
         StartCoroutine(ShowText(dialogueOption.dialogue, delay));
-       
-      // m_dialogueField.text = dialogueOption.dialogue;
 
         while (m_buttonParent.childCount > 0)
         {
@@ -113,6 +118,10 @@ public class DialoguePanel : MonoBehaviour
 
         }
     }
+   /* void ButtonAudio()
+    {
+       m_buttonAudio.Play();
+    }*/
 
     public void Hide()
     {

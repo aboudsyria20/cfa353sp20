@@ -25,6 +25,8 @@ public class Response : MonoBehaviour
 
     private void OnClick()
     {
+        m_dialoguePanel.m_buttonAudio.Play();
+
         if(m_response.givesJellyDonut)
         {
             m_dialoguePanel.PlayerController.jellyDonutInInventory = false;
@@ -55,10 +57,14 @@ public class Response : MonoBehaviour
         {
             m_dialoguePanel.Show(m_response.Option);
             
-            //Jelly dounut conversation
+            //Pawn Shop Onwer conversation
             if (m_response.hadJellyConvo == true)
             {
                 m_dialoguePanel.PlayerController.hadDonutConvo = true;
+            }
+            if (m_response.hadPSOInitialConvo == true)
+            {
+                m_dialoguePanel.PlayerController.psoInitalConvo = true;
             }
             // talked to cheif once
             if (m_response.talkedToChief == true)
@@ -87,6 +93,11 @@ public class Response : MonoBehaviour
             {
                 m_dialoguePanel.PlayerController.hadBarberConvo = true;
             }
+            if (m_response.hadInitialDialogue == true)
+            {
+                m_dialoguePanel.PlayerController.hadInitialDialogue = true;
+            }
         }
     }
+   
 }

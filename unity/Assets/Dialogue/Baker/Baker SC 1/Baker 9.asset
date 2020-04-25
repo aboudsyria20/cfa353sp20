@@ -16,9 +16,12 @@ MonoBehaviour:
   m_responses:
   - Response: How do I know you're telling the truth?
     Option: {fileID: 11400000, guid: 8f82cb7a91b574ac0afffeefae37ae9b, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
-    hadRollingPinConvo: 0
+    hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 1
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -28,12 +31,17 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0
   - Response: Okay. Can I have my jelly donut now?
     Option: {fileID: 11400000, guid: 11ff9925149fc4e79a8728d17d504449, type: 2}
+    hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
-    hadRollingPinConvo: 0
-    tellNoOne: 1
+    hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 1
+    tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
@@ -42,3 +50,5 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0

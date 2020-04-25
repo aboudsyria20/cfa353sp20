@@ -15,11 +15,10 @@ public class ShopKeeperSceneCharacter : SceneCharacters
         {
             m_dialoguePanel.Show(m_scramOption);
         }
-       else if (m_playerController.jellyDonutInInventory)
+         else if (m_playerController.psoInitalConvo == true && m_playerController.jellyDonutInInventory)
         {
             m_dialoguePanel.Show(m_jellyDonutOption);
         }
-        
         else 
         {
             m_dialoguePanel.Show(m_initialOption);

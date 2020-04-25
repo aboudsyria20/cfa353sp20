@@ -9,6 +9,7 @@ public class Baker : SceneCharacters
     [SerializeField] private DialogueOption m_tellNoOne;
     [SerializeField] private DialogueOption m_rollingPin;
     [SerializeField] private DialogueOption m_end;
+    [SerializeField] private DialogueOption m_haveJelly;
 
     public override void ShowDialogue()
     {
@@ -24,11 +25,16 @@ public class Baker : SceneCharacters
         {
             m_dialoguePanel.Show(m_tellNoOne);
         }
+          else if (m_playerController.jarOfJamInInventory == true && m_playerController.hadInitialDialogue == true )
+        {
+            m_playerController.jellyDonutInInventory = true;
+            m_dialoguePanel.Show(m_haveJelly);
+        }
 
         else
         {
             m_dialoguePanel.Show(m_initialOption);
-            m_playerController.jellyDonutInInventory = true;
+           
         }
       }
     }
