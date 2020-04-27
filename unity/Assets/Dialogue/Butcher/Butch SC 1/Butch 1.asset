@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Butch 1
   m_EditorClassIdentifier: 
-  m_dialogue: Hey Mason! What can I get for you?
+  m_dialogue: Hey Mason! What can I do for you?
   m_responses:
-  - Response: When was the last time you saw the mayor?
+  - Response: Can you tell me the last time you saw the mayor?
     Option: {fileID: 11400000, guid: 7d10295a83baf4c709c31d84e602d5da, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0

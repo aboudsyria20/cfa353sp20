@@ -16,7 +16,7 @@ MonoBehaviour:
   m_responses:
   - Response: I found what I believe to be a murder weapon, in a secret compartment,
       in your boat.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: b0aa2320dcd894101ace44ef68fcd47b, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     mustHaveJellyDonut: 0
