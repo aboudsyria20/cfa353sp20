@@ -22398,7 +22398,7 @@ MonoBehaviour:
   butchersKnifeInInventory: 0
   deliTicketInInventory: 0
   jellyDonutInInventory: 0
-  canOpenBoat: 0
+  canOpenBoat: 1
   inventoryPanel: {fileID: 1856387842}
   inventoryKey: {fileID: 592575934}
   inventoryRollingPin: {fileID: 594217062}
