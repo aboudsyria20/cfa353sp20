@@ -14,33 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Did you find anything?
   m_responses:
-  - Response: I found this. (hand over ticket)
+  - Response: I found this.
     Option: {fileID: 11400000, guid: 0ca5ad1958b46412688800a61c2b4672, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 1
+    hadBarberConvo: 0
+    hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    talkedToChief: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 1
+    givesJellyDonut: 0
+    willOpenBoat: 0
   - Response: Not yet.
     Option: {fileID: 11400000, guid: 01736e52147574defa9d1b4639a6e16f, type: 2}
-    mustHavePickedUpJam: 0
-    mustHavePickedUpKey: 0
-    mustHavePickedUpTicket: 0
+    hadBarberConvo: 0
+    hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
-    mustHavePawnInformation: 0
-    mustHaveBarberInformation: 0
-    canOpenFishersBoat: 0
-    talkedToChief: 0
-    canOpenChest: 0
+    hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
+    tellNoOne: 0
+    butchCrying: 0
+    butchCurious: 0
+    butchConvoTwo: 0
     playerWin: 0
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
-    hadJellyConvo: 0
+    talkedToChief: 0
+    mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0

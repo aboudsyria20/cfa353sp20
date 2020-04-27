@@ -16,27 +16,34 @@ MonoBehaviour:
     said the town was too peaceful. That we weren''t needed, but I gave her a reason
     to keep us around.'
   m_responses:
-  - Response: "Not every dog has their day! You\u2019re off to jail!"
+  - Response: It's too bad I have to take you in. I hear prison can be ruff for people
+      like you.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 1
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
-    playerWin: 0
+    playerWin: 1
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: "You\u2019re bad to the bone chief. Enjoy your jail cell!"
+    givesJellyDonut: 0
+    willOpenBoat: 0
+  - Response: "You\u2019re bad to the bone chief. You belong behind bars."
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 1
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -46,13 +53,16 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: "It\u2019s a doggone shame. You\u2019ll be spending the rest of your
-      life behind bars!"
+    givesJellyDonut: 0
+    willOpenBoat: 0
+  - Response: It's time to take this dog to the pound.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -62,3 +72,5 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0

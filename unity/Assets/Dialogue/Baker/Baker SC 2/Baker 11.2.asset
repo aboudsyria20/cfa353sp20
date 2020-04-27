@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 11.2
   m_EditorClassIdentifier: 
-  m_dialogue: Alright, all I need to do id fill the donut. It'll only take a minute
+  m_dialogue: Alright, all I need to do is fill the donut. It'll only take a moment.
   m_responses:
   - Response: Okay.
-    Option: {fileID: 0}
+    Option: {fileID: 11400000, guid: 2f7d8ebb97d254be38ac319c3e106c38, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
     hadPSOInitialConvo: 0
