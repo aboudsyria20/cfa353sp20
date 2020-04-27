@@ -16,7 +16,8 @@ MonoBehaviour:
     said the town was too peaceful. That we weren''t needed, but I gave her a reason
     to keep us around.'
   m_responses:
-  - Response: "Not every dog has their day! You\u2019re off to jail!"
+  - Response: It's too bad I have to take you in. I hear prison can be ruff for people
+      like you.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
@@ -35,7 +36,7 @@ MonoBehaviour:
     mustHavePickedUpTicket: 0
     givesJellyDonut: 0
     willOpenBoat: 0
-  - Response: "You\u2019re bad to the bone chief. Enjoy your jail cell!"
+  - Response: "You\u2019re bad to the bone chief. You belong behind bars."
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
@@ -54,8 +55,7 @@ MonoBehaviour:
     mustHavePickedUpTicket: 0
     givesJellyDonut: 0
     willOpenBoat: 0
-  - Response: "It\u2019s a doggone shame. You\u2019ll be spending the rest of your
-      life behind bars!"
+  - Response: It's time to take this dog to the pound.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0

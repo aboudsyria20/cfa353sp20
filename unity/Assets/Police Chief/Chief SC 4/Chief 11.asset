@@ -19,8 +19,10 @@ MonoBehaviour:
     Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -30,12 +32,16 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0
   - Response: You knew where the butcher's secret compartment was.
     Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -45,28 +51,16 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
-  - Response: You were at the bakery when the rolling pin went missing, and knew
-      where the butcher's secret compartment was.
-    Option: {fileID: 11400000, guid: 9dd31a1cf26f94f4f9688b9fe7f1f9ea, type: 2}
-    hadBarberConvo: 0
-    hadJellyConvo: 0
-    mustHaveJellyDonut: 0
-    hadBakerRollingPinConvo: 0
-    tellNoOne: 0
-    butchCrying: 0
-    butchCurious: 0
-    butchConvoTwo: 0
-    playerWin: 0
-    playerLose: 0
-    mustTalkToCharacter: {fileID: 0}
-    talkedToChief: 0
-    mustHavePickedUpTicket: 0
-  - Response: You're right I'm sorry.
+    givesJellyDonut: 0
+    willOpenBoat: 0
+  - Response: You're right.  I'm sorry.
     Option: {fileID: 11400000, guid: 1164c358ecf63431cb253fbcc1049fe8, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -76,3 +70,5 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0
