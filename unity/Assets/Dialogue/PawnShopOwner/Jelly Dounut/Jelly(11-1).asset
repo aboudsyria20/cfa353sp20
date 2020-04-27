@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogue: Let's just say he's overly fond of our lovely mayor.
   m_responses:
-  - Response: ...
+  - Response: I'll look into it.
     Option: {fileID: 0}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -30,3 +32,4 @@ MonoBehaviour:
     talkedToChief: 0
     mustHavePickedUpTicket: 0
     givesJellyDonut: 1
+    willOpenBoat: 0

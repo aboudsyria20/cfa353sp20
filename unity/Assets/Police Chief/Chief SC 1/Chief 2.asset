@@ -15,12 +15,14 @@ MonoBehaviour:
   m_dialogue: "Mayor Jane Doe was murdered last night. The criminal couldn\u2019t
     have gotten far and is likely still in Creektown. "
   m_responses:
-  - Response: Alright.
+  - Response: Anything else?
     Option: {fileID: 11400000, guid: de5a23a0d9ab949e08178a1ef46dc1f5, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -30,3 +32,5 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 1
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0
