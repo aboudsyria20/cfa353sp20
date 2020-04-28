@@ -11,6 +11,8 @@ public class DialoguePanel : MonoBehaviour
     [SerializeField] private GameObject m_responsePrefab;
     [SerializeField] private float delay = 0.1f;
 
+    public bool thinkingAnimation = true;
+
     public GameObject buttonGroup;
     string myDialogue = "";
     private DialogueOption m_dialogueOption;
@@ -41,8 +43,16 @@ public class DialoguePanel : MonoBehaviour
     public void SetCharacter(Characters character)
     {
         // m_characterImage.sprite = character.InterviewSprite;
-        animator.runtimeAnimatorController = character.animatorController;
-        m_characterImage.SetNativeSize();
+        if(thinkingAnimation == true)
+        {
+          animator.runtimeAnimatorController = character.animatorController;
+          m_characterImage.SetNativeSize();
+        }
+        else if (thinkingAnimation == false)
+        {
+          animator.runtimeAnimatorController = character.supriseController;
+          m_characterImage.SetNativeSize();
+        }
     }
     //Typwirter Effect for the dialogue
     IEnumerator ShowText(string dialogue, float delay)
@@ -50,9 +60,9 @@ public class DialoguePanel : MonoBehaviour
         audioSC.Play();
         for (int i = 0; i < dialogue.Length; i++)
         {
-           
+
             buttonGroup.SetActive(false);
-           
+
             //m_dialogueField.text = dialogue.Substring(0, i);
             string visibleText = dialogue.Substring(0, i);
             string invisibleText = "<color=#FFFFFF00>" + dialogue.Substring(i, dialogue.Length - 1 - i) + "</color>";
@@ -68,7 +78,7 @@ public class DialoguePanel : MonoBehaviour
         m_dialogueOption = dialogueOption;
 
         this.gameObject.SetActive(true);
-       
+
         StartCoroutine(ShowText(dialogueOption.dialogue, delay));
 
         while (m_buttonParent.childCount > 0)
@@ -80,9 +90,9 @@ public class DialoguePanel : MonoBehaviour
 
         for (int i = 0; i < dialogueOption.responses.Length; i++)
         {
-            
+
             DialogueResponse response = dialogueOption.responses[i];
-          
+
             if(response.mustHavePickedUpTicket && !m_playerController.deliTicketInInventory)
             {
                 continue;
@@ -110,7 +120,7 @@ public class DialoguePanel : MonoBehaviour
             {
                 continue;
             }
-            
+
 
             GameObject buttonObject = Instantiate(m_responsePrefab, m_buttonParent);
             Response button = buttonObject.GetComponent<Response>();
