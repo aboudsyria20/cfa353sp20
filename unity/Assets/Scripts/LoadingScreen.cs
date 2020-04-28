@@ -17,16 +17,10 @@ public class LoadingScreen : MonoBehaviour
 
    private float m_timeElapsed;
 
-   [SerializeField] private string m_sceneToLoadOnAwake;
-
    private void Awake()
    {
        DontDestroyOnLoad(this.gameObject);
 
-       if(!string.IsNullOrEmpty(m_sceneToLoadOnAwake))
-       {
-           Load(m_sceneToLoadOnAwake);
-       }
    }
 
    public void Show()

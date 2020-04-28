@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Barber
   animatorController: {fileID: 9100000, guid: 9e8451cceebc17e468e84b7367b56e0e, type: 2}
+  supriseController: {fileID: 9100000, guid: 7024583ecb16649deb0221163c543da0, type: 2}
