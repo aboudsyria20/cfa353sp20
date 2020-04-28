@@ -17,22 +17,16 @@ public class LoadingScreen : MonoBehaviour
 
    private float m_timeElapsed;
 
-   [SerializeField] private string m_sceneToLoadOnAwake;
-
    private void Awake()
    {
        DontDestroyOnLoad(this.gameObject);
+       Hide();
 
-       if(!string.IsNullOrEmpty(m_sceneToLoadOnAwake))
-       {
-           Load(m_sceneToLoadOnAwake);
-       }
    }
 
    public void Show()
    {
-       m_timeElapsed = 0.0f;
-       m_hiding = false;
+       this.gameObject.SetActive(true);
    }
 
    public void Load(string scene)
@@ -43,8 +37,6 @@ public class LoadingScreen : MonoBehaviour
 
    private IEnumerator LoadScene(string scene)
    {
-       yield return new WaitForSeconds(0.35f); //artificial delay for fade
-
        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
        while(asyncLoad.isDone == false)
        {
@@ -55,7 +47,7 @@ public class LoadingScreen : MonoBehaviour
 
    public void Hide()
    {
-       m_hideRequested = true;
+      this.gameObject.SetActive(false);
    }
 
 

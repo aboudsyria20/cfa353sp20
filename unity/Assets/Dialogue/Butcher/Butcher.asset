@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: Butcher Bunny
   animatorController: {fileID: 9100000, guid: e056dcde7d7a3a348bf9568ec3e6aff7, type: 2}
+  supriseController: {fileID: 9100000, guid: 02fb7dc6e419f4211ab96b224be5b628, type: 2}

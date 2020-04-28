@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169caf0a9d6b93f439a5a47b1447f222, type: 3}
   m_Name: Baker
   m_EditorClassIdentifier: 
-  m_name: Backer
+  m_name: Baker
   animatorController: {fileID: 9100000, guid: 97baec4a3b5601f45ad4a0dd6880be47, type: 2}
+  supriseController: {fileID: 9100000, guid: c9d88796879c844a8bdffb4251b28e40, type: 2}

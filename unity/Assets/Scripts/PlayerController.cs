@@ -108,6 +108,9 @@ public class PlayerController : MonoBehaviour
   [Header("Screen Checks")]
   private bool isInDialog = false;
 
+  [Header("UI")]
+  public GameObject pauseButton;
+
 
   [SerializeField] private GameObject m_dialoguePanelObject;
 
@@ -154,7 +157,7 @@ public class PlayerController : MonoBehaviour
         rb2d.velocity = new Vector2 (0, 0);
             anim.SetFloat("Speed", 0);
             anim.SetFloat("YSpeed", 0);
-            // set animation speed to 0 
+            // set animation speed to 0
 
             return;
       }
@@ -170,7 +173,7 @@ public class PlayerController : MonoBehaviour
         //   AudioSource.PlayClipAtPoint(footsteps, transform.position);
         //   playFootsteps = 0.0f;
       }
-      
+
       //Debug.Log(horiMove);
 
 
