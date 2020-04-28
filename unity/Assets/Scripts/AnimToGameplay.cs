@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class AnimToGameplay : MonoBehaviour
 {
 
-  loadingScreen ls;
+  [SerializeField] private LoadingScreen ls;
+
   private float animTime = 0;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class AnimToGameplay : MonoBehaviour
     {
       if (Input.anyKey)
       {
-          SceneManager.LoadScene(2);
+          ls.Load("SampleScene 1");
       }
     }
 
@@ -28,6 +29,7 @@ public class AnimToGameplay : MonoBehaviour
     {
         yield return new WaitForSeconds(21f);
 
-          SceneManager.LoadScene(2);
+          ls.Load("SampleScene 1");
+          //SceneManager.LoadScene(2);
     }
 }
