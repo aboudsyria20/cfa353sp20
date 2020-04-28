@@ -2906,7 +2906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extraRenderers: []
-  m_sortOffset: 0.18
+  m_sortOffset: -0.78
 --- !u!1001 &259112545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9837,7 +9837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extraRenderers: []
-  m_sortOffset: 0.18
+  m_sortOffset: -0.78
 --- !u!1 &828576227
 GameObject:
   m_ObjectHideFlags: 0
@@ -21211,7 +21211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extraRenderers: []
-  m_sortOffset: 0.18
+  m_sortOffset: -0.78
 --- !u!1001 &1766764338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24561,7 +24561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_extraRenderers: []
-  m_sortOffset: 0.18
+  m_sortOffset: -0.78
 --- !u!1 &2016882886
 GameObject:
   m_ObjectHideFlags: 0
