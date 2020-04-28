@@ -5,23 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
+    private bool m_isLoading = false;
     [SerializeField] private float m_minLoadTime = 3.0f;
-   private bool m_hideRequested;
-   private bool m_hiding;
-
-   private float m_timeElapsed;
 
    private void Awake()
    {
        DontDestroyOnLoad(this.gameObject);
-       Hide();
+   }
 
+   private void Start()
+   {
+       Hide();
    }
 
    public void Show()
@@ -31,36 +25,32 @@ public class LoadingScreen : MonoBehaviour
 
    public void Load(string scene)
    {
+       if(m_isLoading) return;
        Show();
        StartCoroutine(LoadScene(scene));
    }
 
    private IEnumerator LoadScene(string scene)
    {
+       float startTime = Time.realtimeSinceStartup;
+       m_isLoading = true;
        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scene);
        while(asyncLoad.isDone == false)
        {
            yield return null;
        }
+       float loadTime = Time.realtimeSinceStartup - startTime;
+       if(loadTime < m_minLoadTime)
+       {
+           yield return new WaitForSeconds(m_minLoadTime-loadTime);
+       }
+       m_isLoading = false;
        Hide();
+       GameObject.Destroy(this.gameObject);
    }
 
    public void Hide()
    {
       this.gameObject.SetActive(false);
    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-      m_timeElapsed += Time.deltaTime;
-
-              if(m_hideRequested && m_timeElapsed >= m_minLoadTime && !m_hiding)
-              {
-                  m_hiding = true;
-              }
-
-              float finalValue = m_hiding?0:1;
-    }
 }
