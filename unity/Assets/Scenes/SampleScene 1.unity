@@ -10314,8 +10314,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985163143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -156.51, y: -2.63, z: -0.52}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalPosition: {x: -157.384, y: -3.77, z: -0.52}
+  m_LocalScale: {x: 0.39446002, y: 0.4273296, z: 1}
   m_Children: []
   m_Father: {fileID: 79704855}
   m_RootOrder: 10
@@ -12488,6 +12488,7 @@ MonoBehaviour:
   m_responsePrefab: {fileID: 3973861153015941762, guid: 44e93b21c33e0594498871bbafc5228d,
     type: 3}
   delay: 0.02
+  thinkingAnimation: 1
   buttonGroup: {fileID: 2023840319}
   animator: {fileID: 505941957}
   audioSC: {fileID: 1820195681}
