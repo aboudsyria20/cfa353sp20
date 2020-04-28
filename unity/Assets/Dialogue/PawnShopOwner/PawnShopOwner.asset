@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_name: PawnShopOwner
   animatorController: {fileID: 9100000, guid: 78ae56bc42e4c72408f571f7a02ddaa6, type: 2}
+  supriseController: {fileID: 9100000, guid: 9ed98dbd809964f7aa45a7834de1414a, type: 2}

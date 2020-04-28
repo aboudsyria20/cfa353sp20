@@ -8,7 +8,7 @@ using UnityEngine.Video;
 public class DialogueOption : ScriptableObject
 {
 
-   
+
     [SerializeField] private string m_dialogue;
     public string dialogue { get { return m_dialogue; } set { m_dialogue = value; } }
 
@@ -20,15 +20,15 @@ public class DialogueOption : ScriptableObject
 [System.Serializable]
 public class DialogueResponse
 {
-    
+
     public string Response;
     public DialogueOption Option;
 
-   
+
     //public bool mustHavemustHavePickedUpKey;
     //Barbetr Dialogue
     public bool hadBarberConvo;
-    //Pawn Shop Owner 
+    //Pawn Shop Owner
     public bool hadJellyConvo = false;
     public bool hadPSOInitialConvo = false;
     public bool mustHaveJellyDonut;
@@ -45,14 +45,11 @@ public class DialogueResponse
     public bool playerLose;
     // making sure to talk to players
     public Characters mustTalkToCharacter;
-    //Police Cheif 
+    //Police Cheif
     public bool talkedToChief;
     public bool mustHavePickedUpTicket;
     public bool givesJellyDonut;
     public bool willOpenBoat;
-   
+
 
 }
-
-
-

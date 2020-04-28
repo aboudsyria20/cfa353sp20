@@ -48,7 +48,7 @@ MonoBehaviour:
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
-    playerWin: 0
+    playerWin: 1
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0
-    playerWin: 0
+    playerWin: 1
     playerLose: 0
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
