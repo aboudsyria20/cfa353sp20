@@ -4427,6 +4427,7 @@ MonoBehaviour:
   m_rollingPin: {fileID: 11400000, guid: 4f0db27086de54d7a901e14e0d6c1a24, type: 2}
   m_end: {fileID: 11400000, guid: 156498518c7f64b6b87813f3893ea86a, type: 2}
   m_haveJelly: {fileID: 11400000, guid: feca8a3fe394ebd4fb8a931e9aec94e8, type: 2}
+  m_gaveJelly: {fileID: 11400000, guid: da95257f8515ad444bb487ff717c7f9c, type: 2}
 --- !u!61 &394731206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24568,6 +24569,7 @@ MonoBehaviour:
   tellNoOne: 0
   hadInitialDialogue: 0
   hadRollingPinConvo: 0
+  gaveJellyDoughnut: 0
   hadBarberConvo: 0
   rb2d: {fileID: 2005333928}
   anim: {fileID: 2005333931}

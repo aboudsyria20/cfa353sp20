@@ -23,6 +23,7 @@ MonoBehaviour:
     hadBakerRollingPinConvo: 0
     hadInitialDialogue: 0
     tellNoOne: 0
+    gaveJellyDoughnut: 1
     butchCrying: 0
     butchCurious: 0
     butchConvoTwo: 0

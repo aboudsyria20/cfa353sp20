@@ -36,6 +36,7 @@ public class DialogueResponse
     public bool hadBakerRollingPinConvo;
     public bool hadInitialDialogue;
     public bool tellNoOne;
+    public bool gaveJellyDoughnut;
     // Butcher Dialogue
     public bool butchCrying;
     public bool butchCurious;
