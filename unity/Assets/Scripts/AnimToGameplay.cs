@@ -21,7 +21,7 @@ public class AnimToGameplay : MonoBehaviour
     {
       if (Input.anyKey)
       {
-          ls.Load("SampleScene 1");
+        ls.Load("SampleScene 1");
       }
     }
 
