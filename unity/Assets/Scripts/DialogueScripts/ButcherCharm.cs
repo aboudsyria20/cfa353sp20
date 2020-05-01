@@ -15,13 +15,13 @@ public class ButcherCharm : SceneCharacters
 
     public override void ShowDialogue()
     {
-         if (m_playerController.rollingPinInInventory)
-        {
-            m_dialoguePanel.Show(m_rollingPin);
-        }
-       else if (m_playerController.hadButchConvoTwo == true)
+        if (m_playerController.hadButchConvoTwo == true)
         {
             m_dialoguePanel.Show(m_end);
+        }
+       else if (m_playerController.rollingPinInInventory)
+        {
+            m_dialoguePanel.Show(m_rollingPin);
         }
         else if (m_playerController.butchCrying == true)
         {

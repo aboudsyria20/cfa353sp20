@@ -80,6 +80,10 @@ public class Response : MonoBehaviour
             {
                 m_dialoguePanel.PlayerController.butchCurious = true;
             }
+            if(m_response.butchConvoTwo == true)
+            {
+                m_dialoguePanel.PlayerController.hadButchConvoTwo = true;
+            }
             //Baker Booleans
             if (m_response.tellNoOne == true)
             {
@@ -96,6 +100,10 @@ public class Response : MonoBehaviour
             if (m_response.hadInitialDialogue == true)
             {
                 m_dialoguePanel.PlayerController.hadInitialDialogue = true;
+            }
+            if (m_response.gaveJellyDoughnut == true)
+            {
+                m_dialoguePanel.PlayerController.gaveJellyDoughnut = true;
             }
         }
     }

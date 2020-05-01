@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool tellNoOne;
     public bool hadInitialDialogue;
     public bool hadRollingPinConvo;
+    public bool gaveJellyDoughnut;
     //Barber convo
     public bool hadBarberConvo;
 
