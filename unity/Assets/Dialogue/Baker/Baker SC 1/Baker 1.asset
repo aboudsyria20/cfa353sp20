@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38c85d4949b99e4b83e1ff36947da6f, type: 3}
   m_Name: Baker 1
   m_EditorClassIdentifier: 
-  m_dialogue: Hello! welcome to my bakery!
+  m_dialogue: Hello! Welcome to my bakery!
   m_responses:
   - Response: Hello, Can I get one jelly donut.
     Option: {fileID: 11400000, guid: 95b22db4bbe394424abab384e8a2e08f, type: 2}

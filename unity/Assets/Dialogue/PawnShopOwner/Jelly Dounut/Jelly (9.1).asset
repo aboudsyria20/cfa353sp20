@@ -15,12 +15,14 @@ MonoBehaviour:
   m_dialogue: 'Hey! It was all figured out. She came in. We talked about it, and
     we came to an understanding. '
   m_responses:
-  - Response: What's youre point?
+  - Response: What's your point?
     Option: {fileID: 11400000, guid: 50cff197a5230f842a497b14d967985f, type: 2}
     hadBarberConvo: 0
     hadJellyConvo: 0
+    hadPSOInitialConvo: 0
     mustHaveJellyDonut: 0
     hadBakerRollingPinConvo: 0
+    hadInitialDialogue: 0
     tellNoOne: 0
     butchCrying: 0
     butchCurious: 0
@@ -30,3 +32,5 @@ MonoBehaviour:
     mustTalkToCharacter: {fileID: 0}
     talkedToChief: 0
     mustHavePickedUpTicket: 0
+    givesJellyDonut: 0
+    willOpenBoat: 0
