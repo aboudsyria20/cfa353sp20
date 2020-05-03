@@ -370,6 +370,7 @@ public class PlayerController : MonoBehaviour
           {
               rollingPinInInventory = true;
               other.gameObject.SetActive(false);
+              glow3.gameObject.SetActive(false);
               AudioSource.PlayClipAtPoint(collectEvidence, transform.position);
               StartCoroutine(GotRollingPin());
               //Debug.Log("Picked up Rolling Pin");
